@@ -52,6 +52,7 @@ body.modern-portfolio #header {
   overflow:visible;
   background:rgba(17,19,24,.94);
   border-bottom:1px solid var(--line);
+  box-shadow:0 4px 20px rgba(0,0,0,.12);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px)
 }
@@ -98,11 +99,13 @@ body.modern-portfolio .nav-resume {
   padding:9px 13px;
   border:1px solid #66503d;
   border-radius:4px;
+  background:rgba(214,155,99,.08);
   color:var(--text);
   font-size:11px;
   font-weight:600;
   white-space:nowrap
 }
+body.modern-portfolio .nav-resume:hover { border-color:var(--accent); background:var(--accent-soft); color:var(--text) }
 body.modern-portfolio .nav-resume span { margin-left:7px; color:var(--accent) }
 body.modern-portfolio .mobile-nav-toggle { display:none }
 
@@ -551,6 +554,195 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .release-art { width:84px; height:94px }
   body.modern-portfolio .itch-project-art { width:90px }
   body.modern-portfolio .contact-email { padding:18px }
+}
+@media (prefers-color-scheme:light) {
+  :root {
+    color-scheme:light;
+    --page:#f6f4ef;
+    --surface:#fffefa;
+    --surface-raised:#efede7;
+    --text:#20232a;
+    --muted:#656971;
+    --line:#d9d6ce;
+    --accent:#9b5e31;
+    --accent-soft:rgba(155,94,49,.1);
+    --blue:#385d9c
+  }
+  body.modern-portfolio { background:var(--page); color:var(--text) }
+  body.modern-portfolio #header { background:var(--page); border-bottom-color:transparent; box-shadow:none }
+  body.modern-portfolio .nav-menu a,
+  body.modern-portfolio .hero-summary,
+  body.modern-portfolio .section-intro,
+  body.modern-portfolio .about-intro p,
+  body.modern-portfolio .expertise-card p,
+  body.modern-portfolio .expertise-card li,
+  body.modern-portfolio .experience-content ul,
+  body.modern-portfolio .project-copy>p,
+  body.modern-portfolio .case-study-grid p,
+  body.modern-portfolio .skill-card .tag-list span,
+  body.modern-portfolio .programming-card .profile-note,
+  body.modern-portfolio .education-note,
+  body.modern-portfolio .certificate-list small,
+  body.modern-portfolio .studio-intro>p:not(.studio-kicker),
+  body.modern-portfolio .release-description,
+  body.modern-portfolio .itch-project-copy>small,
+  body.modern-portfolio .contact-side p,
+  body.modern-portfolio .site-footer p { color:#555a63 }
+  body.modern-portfolio .hero-section { background:radial-gradient(ellipse at 77% 42%,rgba(155,94,49,.09),transparent 34%),var(--page) }
+  body.modern-portfolio .about,
+  body.modern-portfolio .programming-section,
+  body.modern-portfolio .education-section { background:#efede7 }
+  body.modern-portfolio .services,
+  body.modern-portfolio .skills-section,
+  body.modern-portfolio .certifications-section,
+  body.modern-portfolio .contact-section { background:#f6f4ef }
+  body.modern-portfolio .projects-section { background:#f1efe9 }
+  body.modern-portfolio #studio { background:#e9e5dc; border-color:#d3cec3 }
+  body.modern-portfolio .site-footer { background:#e9e6df }
+  body.modern-portfolio .nav-resume,
+  body.modern-portfolio .project-filter,
+  body.modern-portfolio .expertise-card,
+  body.modern-portfolio .experience-card,
+  body.modern-portfolio .project-card,
+  body.modern-portfolio .skill-card,
+  body.modern-portfolio .programming-summary,
+  body.modern-portfolio .programming-card,
+  body.modern-portfolio .education-card,
+  body.modern-portfolio .certificate-list>a,
+  body.modern-portfolio .contact-side { background:var(--surface); border-color:var(--line) }
+  body.modern-portfolio .project-filter { color:#555a63 }
+  body.modern-portfolio .project-filter:hover,
+  body.modern-portfolio .project-filter.is-active { border-color:var(--accent); color:#713f1d }
+  body.modern-portfolio .hero-highlights,
+  body.modern-portfolio .hero-highlights>div,
+  body.modern-portfolio .exploring-strip,
+  body.modern-portfolio .experience-list:before,
+  body.modern-portfolio .education-card-divider,
+  body.modern-portfolio .itch-catalog { border-color:#d3cfc6; background-color:transparent }
+  body.modern-portfolio .experience-logo,
+  body.modern-portfolio .programming-card img { background:#fff }
+  body.modern-portfolio .experience-role,
+  body.modern-portfolio .project-meta,
+  body.modern-portfolio .case-study-grid h4,
+  body.modern-portfolio .programming-summary strong,
+  body.modern-portfolio .contest-year,
+  body.modern-portfolio .education-status,
+  body.modern-portfolio .certificate-heading .section-kicker,
+  body.modern-portfolio .studio-kicker,
+  body.modern-portfolio .studio-release-heading,
+  body.modern-portfolio .itch-project-type { color:#87522d }
+  body.modern-portfolio .nav-menu a,
+  body.modern-portfolio .hero-art-note,
+  body.modern-portfolio .hero-art-caption,
+  body.modern-portfolio .hero-social a,
+  body.modern-portfolio .hero-highlights span,
+  body.modern-portfolio .eyebrow { color:#555a63 }
+  body.modern-portfolio .hero-art-note,
+  body.modern-portfolio .hero-art-caption { background:rgba(255,254,250,.9) }
+  body.modern-portfolio .project-tags span,
+  body.modern-portfolio .education-coursework span { color:#4e535c; border-color:#d3d0c8; background:#f5f3ee }
+  body.modern-portfolio .project-case-study,
+  body.modern-portfolio .contest-list,
+  body.modern-portfolio .contest-list>a,
+  body.modern-portfolio .itch-catalog { border-color:var(--line) }
+  body.modern-portfolio .contest-list>a:hover { background:#e9e6df }
+  body.modern-portfolio .contest-list small,
+  body.modern-portfolio .education-date { color:#656971 }
+  body.modern-portfolio .studio-metrics>div,
+  body.modern-portfolio .studio-release,
+  body.modern-portfolio .itch-project-card { background:#fffefa; border-color:#d3cec3 }
+  body.modern-portfolio .studio-metrics strong,
+  body.modern-portfolio .studio-metrics span,
+  body.modern-portfolio .studio-release-heading,
+  body.modern-portfolio .release-copy small,
+  body.modern-portfolio .itch-project-copy>strong,
+  body.modern-portfolio .itch-project-copy>small,
+  body.modern-portfolio .studio-store-link,
+  body.modern-portfolio .itch-catalog-heading>a { color:#4f535b }
+  body.modern-portfolio .release-art,
+  body.modern-portfolio .itch-project-art { background:#e6e3dc }
+  body.modern-portfolio .studio-actions a,
+  body.modern-portfolio .studio-store-link,
+  body.modern-portfolio .itch-catalog-heading>a,
+  body.modern-portfolio .contact-socials a,
+  body.modern-portfolio .site-footer a,
+  body.modern-portfolio .project-actions a,
+  body.modern-portfolio .case-study-grid a,
+  body.modern-portfolio .programming-card a { color:#824a22 }
+  body.modern-portfolio .contact-email { background:linear-gradient(130deg,#f0e7dc,#fffefa); border-color:#d9c9b8 }
+  body.modern-portfolio .contact-email strong,
+  body.modern-portfolio .contact-email>b,
+  body.modern-portfolio .section-next-link { color:#74451f }
+  body.modern-portfolio .hero-art:before,
+  body.modern-portfolio .hero-art:after { border-color:rgba(110,91,70,.18) }
+  body.modern-portfolio section.section-shell:nth-of-type(even) { background:#efede7 }
+  body.modern-portfolio .section-shell { border-top-color:rgba(32,35,42,.07) }
+  body.modern-portfolio .nav-menu { background:transparent; box-shadow:none }
+  body.modern-portfolio.nav-open .nav-menu { background:#fffefa; box-shadow:0 12px 30px rgba(32,35,42,.12) }
+  body.modern-portfolio .nav-menu a { color:#4d5159 }
+  body.modern-portfolio .nav-menu .active>a { color:#824a22 }
+  body.modern-portfolio .nav-resume { border-color:#b99471; background:#f3e8dc; color:#59391f }
+  body.modern-portfolio .nav-resume:hover { border-color:#87522d; background:#ead9c7; color:#442b18 }
+  body.modern-portfolio .mobile-nav-toggle { border-color:#c9c5bc; background:#fffefa }
+  body.modern-portfolio .mobile-nav-toggle span { background:#30343b }
+  body.modern-portfolio .eyebrow-sep,
+  body.modern-portfolio .scroll-cue,
+  body.modern-portfolio .experience-date,
+  body.modern-portfolio .experience-content ul,
+  body.modern-portfolio .experience-content .workflow-note,
+  body.modern-portfolio .experience-tags span,
+  body.modern-portfolio .experience-metrics span,
+  body.modern-portfolio .project-filter,
+  body.modern-portfolio .project-case-study summary,
+  body.modern-portfolio .project-meta,
+  body.modern-portfolio .hero-highlights strong,
+  body.modern-portfolio .programming-summary span,
+  body.modern-portfolio .programming-card .profile-rank,
+  body.modern-portfolio .contest-list strong,
+  body.modern-portfolio .contest-list b,
+  body.modern-portfolio .education-degree,
+  body.modern-portfolio .education-coursework span,
+  body.modern-portfolio .certificate-list strong,
+  body.modern-portfolio .studio-release-heading,
+  body.modern-portfolio .release-copy strong,
+  body.modern-portfolio .itch-project-copy>strong,
+  body.modern-portfolio .contact-side p { color:#30343b }
+  body.modern-portfolio .hero-art-note strong { color:#20232a }
+  body.modern-portfolio .experience-date,
+  body.modern-portfolio .experience-tags span,
+  body.modern-portfolio .education-coursework span,
+  body.modern-portfolio .skill-card .tag-list span,
+  body.modern-portfolio .exploring-strip .tag-list span { border-color:#d3d0c8; background:#f5f3ee }
+  body.modern-portfolio .exploring-strip .tag-list span { border-color:#c9b398; background:#fffaf3; color:#624020 }
+  body.modern-portfolio .experience-metrics>div { background:#e9e6df }
+  body.modern-portfolio .workflow-note strong,
+  body.modern-portfolio .programming-card .profile-rank,
+  body.modern-portfolio .education-status-complete { color:#87522d }
+  body.modern-portfolio .programming-card .profile-note,
+  body.modern-portfolio .education-note,
+  body.modern-portfolio .contest-list small,
+  body.modern-portfolio .certificate-list small,
+  body.modern-portfolio .release-copy small,
+  body.modern-portfolio .release-description,
+  body.modern-portfolio .itch-project-copy>small { color:#5e626a }
+  body.modern-portfolio .contest-view-label { color:#824a22!important }
+  body.modern-portfolio .project-index { background:rgba(255,254,250,.9); color:#30343b }
+  body.modern-portfolio .project-filter.is-active { color:#713f1d }
+  body.modern-portfolio .case-study-grid h4,
+  body.modern-portfolio .experience-content .workflow-note strong,
+  body.modern-portfolio .education-status,
+  body.modern-portfolio .certificate-list b,
+  body.modern-portfolio .itch-project-arrow,
+  body.modern-portfolio .release-store,
+  body.modern-portfolio .hero-art-note span,
+  body.modern-portfolio .hero-art-caption b,
+  body.modern-portfolio .scroll-cue span,
+  body.modern-portfolio .expertise-number { color:#87522d }
+  body.modern-portfolio .project-case-study summary,
+  body.modern-portfolio .project-meta,
+  body.modern-portfolio .programming-card .profile-rank { color:#30343b }
+  body.modern-portfolio .hero-art { background:#e5e1d8; border-color:#d3cec3 }
+  body.modern-portfolio .studio-release .release-store { border-color:#cdbda9 }
 }
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto }
