@@ -7,6 +7,61 @@
 !(function($) {
   "use strict";
 
+  if (document.body.classList.contains('modern-portfolio')) {
+    var $body = $('body');
+    var $toggle = $('.mobile-nav-toggle');
+    var $nav = $('#primary-navigation');
+
+    function closeMobileNav() {
+      $body.removeClass('nav-open');
+      $toggle.attr({'aria-expanded': 'false', 'aria-label': 'Open navigation'});
+    }
+
+    $toggle.on('click', function() {
+      var isOpen = !$body.hasClass('nav-open');
+      $body.toggleClass('nav-open', isOpen);
+      $toggle.attr({'aria-expanded': String(isOpen), 'aria-label': isOpen ? 'Close navigation' : 'Open navigation'});
+    });
+
+    $nav.on('click', 'a[href^="#"]', function() {
+      closeMobileNav();
+      $nav.find('li').removeClass('active');
+      $(this).closest('li').addClass('active');
+    });
+
+    $(document).on('click', function(event) {
+      if ($body.hasClass('nav-open') && !$(event.target).closest('#primary-navigation, .mobile-nav-toggle').length) closeMobileNav();
+    });
+
+    if ('IntersectionObserver' in window) {
+      var navObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var id = '#' + entry.target.id;
+          $nav.find('li').removeClass('active');
+          $nav.find('a[href="' + id + '"]').closest('li').addClass('active');
+        });
+      }, {rootMargin: '-25% 0px -65% 0px'});
+      document.querySelectorAll('.site-main > section[id]').forEach(function(section) { navObserver.observe(section); });
+    }
+
+    $(window).on('load', function() {
+      var $portfolioFilters = $('#portfolio-flters li');
+      var $portfolioItems = $('#portfolio .portfolio-item');
+      $portfolioFilters.on('click', function() {
+        var filter = $(this).data('filter');
+        $portfolioFilters.removeClass('filter-active');
+        $(this).addClass('filter-active');
+        $portfolioItems.each(function() {
+          var matches = filter === '*' || $(this).hasClass(filter.slice(1));
+          this.hidden = !matches;
+        });
+      });
+      if ($.fn.venobox) $('.venobox').venobox();
+    });
+    return;
+  }
+
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -13,12 +13,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Al Shahreyaj's Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>Al Shahreyaj (Reyaj) — Software Engineer</title>
+  <meta content="Al Shahreyaj (Reyaj) is a software engineer in Hannover with experience in full-stack development, backend systems, and applied AI and machine learning." name="description">
+  <meta content="Al Shahreyaj, Reyaj, Software Engineer, Applied AI, Machine Learning, Hannover" name="keywords">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/portfolio.css" rel="stylesheet">
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -52,7 +54,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body class="modern-portfolio">
   
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
@@ -60,41 +62,57 @@
   <!-- End Google Tag Manager (noscript) -->
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
-
-    <div class="container">
-
-      <h1><a href="index.html">Al Shahreyaj</a></h1>
-      <h2 style="color:#fff">I'm a <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
+    <div class="site-nav-wrap">
+      <a class="brand" href="#home" aria-label="Al Shahreyaj home">AS<span>.</span></a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
         <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#programming"> <span>Problem Solving</span></a></li>
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="https://drive.google.com/file/d/1L01kVDnG2O1B9u6iwRatmboCB54CnTZe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#programming">Programming</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#studio">XenEva Studio</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.github.com/alshahreyaj" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:alshahriaz@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-          <a href="https://alshahreyaj.itch.io/" target="_blank" class="unity"><i class='bx bxl-unity'></i></a>
-          <a href="https://play.google.com/store/apps/dev?id=6544129781446449531" target="_blank" class="play-store"><i class='bx bxl-play-store' ></i></a>
-
-      </div>
-
+      </nav>
+      <a class="nav-resume" href="assets/docs/CV_English.pdf" target="_blank" rel="noopener">Resume <span>↗</span></a>
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
+  <main class="site-main">
+  <!-- ======= Home ======= -->
+  <section id="home" class="hero-section">
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER <span class="eyebrow-sep">/</span> HANNOVER, GERMANY</p>
+        <h1>Engineering software<br>for the <span>real world.</span></h1>
+        <p class="hero-rotator">I work across <span class="typing"></span><span class="typing-cursor">|</span></p>
+        <p class="hero-summary">I’m Al Shahreyaj (Reyaj), a software engineer building web products, backend services, and practical machine-learning systems. Currently pursuing an M.Sc. in Computer Science at Leibniz University Hannover.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#portfolio">Explore selected work <span>↘</span></a><a class="button button-secondary" href="assets/docs/CV_English.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a></div>
+        <div class="hero-social" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.github.com/alshahreyaj" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="mailto:alshahreyaj@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+          <a href="https://alshahreyaj.itch.io/" target="_blank" rel="noopener" aria-label="Itch.io"><i class="bx bxl-unity"></i></a>
+          <a href="https://play.google.com/store/apps/dev?id=6544129781446449531" target="_blank" rel="noopener" aria-label="Google Play"><i class="bx bxl-play-store"></i></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-art-grid"></div><div class="hero-art-ring"></div>
+        <img src="assets/img/me.jpg" alt="Portrait of Al Shahreyaj">
+        <div class="hero-art-note"><span>01</span><span>Software<br>with purpose</span></div>
+        <div class="hero-art-caption">WEB ENGINEERING <b>·</b> APPLIED AI <b>·</b> GAMES</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </div>
+  </section>
+
+  <!-- ======= About ======= -->
   <section id="about" class="about">
 
     <!-- ======= About Me ======= -->
@@ -106,24 +124,23 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+          <img src="assets/img/me.jpg" class="img-fluid" alt="Al Shahreyaj">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Passionate problem solver with a knack for competitive programming and a proven track record in software engineering. 
-            Currently excelling at Enosis Solution, contributing expertise in ASP.NET. Recognized for achievements in competitive 
-            programming contests and committed to continuous learning.
-          </p>
+          <p>I’m a Software Engineer with 4+ years of professional experience developing scalable web applications, backend systems, and AI-powered solutions. I’ve worked with large engineering teams on production applications serving 60K+ active users, using technologies like JavaScript, React, Node.js, Go, and SQL.</p>
+          <p>I also have hands-on experience as a Machine Learning Developer, working on audio noise reduction models, on-device ML optimization, and integrating AI capabilities into existing software products.</p>
+          <p>Currently, I’m pursuing an M.Sc. in Computer Science at Leibniz University Hannover, Germany, while continuing to explore AI, machine learning, and software development.</p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 07 January 1997</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +8801865977883</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Role:</strong> Software Engineer</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +49 163 1571643</li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Dhaka, Bangladesh</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> alshahriaz@gmail.com</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Location:</strong> Hannover, Germany</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> alshahreyaj@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -142,186 +159,105 @@
       <div class="row">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
-            <!-- <i class="ri-global-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3> -->
             <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
             <h3>Software Engineering</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <!-- <i class="ri-database-2-line" style="color: #5578ff;"></i> -->
-            <i class="ri-global-line" style="color: #ffbb2c;"></i>
+            <i class="ri-gamepad-line" style="color: #ffbb2c;"></i>
             <h3>Game Programming</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Problem Solving</h3>
+            <i class="ri-terminal-box-line" style="color: #47aeff;"></i>
+            <h3>Competitive Programming</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-            <i class="ri-english-input" style="color: #1c7d32;"></i>
-            <h3>Data Structure and Algorithm</h3>
+            <i class="ri-git-branch-line" style="color: #1c7d32;"></i>
+            <h3>Data Structures &amp; Algorithms</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
+            <i class="ri-cpu-line" style="color: #28a745;"></i>
             <h3>Deep Learning</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
+            <i class="ri-shape-line" style="color: #f1081f;"></i>
             <h3>Design Patterns</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Database Management</h3>
+            <i class="ri-links-line" style="color: #ffc107;"></i>
+            <h3>REST API development</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-image-line" style="color: #ffc107;"></i>
-            <h3>REST API development</h3>
+            <i class="ri-cpu-line" style="color: #12d640;"></i>
+            <h3>Applied AI &amp; ML Engineering</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-chat-4-line" style="color: #47aeff;"></i>
+            <h3>LLMs, RAG &amp; NLP</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-search-eye-line" style="color: #ffc107;"></i>
+            <h3>Reliable, Efficient &amp; Interpretable ML</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-share-line" style="color: #f1081f;"></i>
+            <h3>Knowledge Graphs &amp; Algorithmic ML</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-settings-3-line" style="color: #47aeff;"></i>
+            <h3>Production-oriented AI Systems</h3>
           </div>
         </div>
       </div>
 
     </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/bsmrstu.jpg" class="img-fluid" alt="">
-              <h4 style="text-align:center;padding-top: 10px;"><a href="https://www.bsmrstu.edu.bd/" target="_blank" style="color:#12d640">Bangabandhu Sheikh Mujibur Rahman Science and Technology University</a><br> </h4>
-              <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col">
-                  <p style="text-align:left;color:#fff;padding: 5px 10px;"><em> BSc (Honours) in Computer Science and Engineering</em></p>
-                  <h5 style="text-align:left;padding: 0px 10px;">Janurary 2017 - February 2022</h5>
-                  <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-                  <ul style="text-align:left;color:#fff;">
-                    <li>Distributed Database Systems</li>
-                    <li>Cloud Computing</li>
-                    <li>Foundation Of Algorithms</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px; display: none;">
-
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/2BTJ636Q2E93?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-           </div>
-          </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Algorithms-Design and Analysis</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/6THRQXYE9EHZ?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ucsd.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Algorithmic Toolbox</h4>
-              <div class="portfolio-links">
-                <a href="https://coursera.org/share/98bbfb990484fac370d5e5ed14334ea4" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 0px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Deep Learning with Tensorflow</h4>
-              <div class="portfolio-links">
-                <a href="https://drive.google.com/file/d/1FSwPt19EzY_tpvqkE6igtLf3gccKcssC/view?usp=sharing" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 370px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning with Python</h4>
-              <div class="portfolio-links">
-                <a href="https://drive.google.com/file/d/1gimySw_NPzCJ54dqZ2j2wYyz-JDOg-S0/view?usp=sharing" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 740px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/dai.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Neural Networks and Deep Learning</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/ELXZ6FE2BU7X?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    </div>
-
   </section>
-  <!-- End Education Section -->
 
+  <!-- ======= Skills ======= -->
+  <section id="skills" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-showcase">
+        <article class="skill-group" data-aos="fade-up">
+          <div class="skill-group-heading"><span>01</span><h3>Programming languages</h3></div>
+          <div class="skill-tags"><span>C++</span><span>C#</span><span>JavaScript</span><span>Python</span><span>Go</span><span>SQL</span></div>
+        </article>
+        <article class="skill-group" data-aos="fade-up" data-aos-delay="75">
+          <div class="skill-group-heading"><span>02</span><h3>Tools &amp; technologies</h3></div>
+              <div class="skill-tags"><span>ASP.NET</span><span>Node.js</span><span>React</span><span>Unity 3D</span><span>TensorFlow</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Git</span><span>Linux</span><span>Jira</span></div>
+        </article>
+        <article class="skill-group skill-group-wide" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-group-heading"><span>03</span><h3>Engineering &amp; AI</h3></div>
+          <div class="skill-tags"><span>Problem solving</span><span>Data structures &amp; algorithms</span><span>Deep learning</span><span>Applied AI</span><span>RAG</span><span>System design</span><span>Object-oriented programming</span><span>REST APIs</span><span>Design patterns</span><span>Debugging</span><span>Game programming</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-
-  <!-- Start Experience Section -->
-
+  <!-- ======= Experience ======= -->
   <section id="experience" class="services">
     <div class="container">
       <div class="section-title">
@@ -330,13 +266,15 @@
       <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.enosisbd.com/" style="color:#12d640">Enosis Solution</a><br> </h4>
-                <h5 style="text-align:left;">Augest 2022 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Software Engineer </em></p>
+                <h4 style="text-align:left;"><a href="https://www.enosisbd.com/" style="color:#12d640">Enosis Solutions</a><br> </h4>
+                <h5 style="text-align:left;">August 2022 - September 2026</h5>
+                <p style="text-align:left;color:#fff"><em>Senior Software Engineer</em></p>
                 <ul style="text-align:left;">
-                  <li>Worked in a 70+ member team in the successful development and deployment of a web project being used by 60,000+ users, using ASP.NET, meeting tight deadlines for feature implementation.</li>
-                  <li>Resolved critical bugs, optimized performance, ensuring the project's stability in the production environment.</li>
-                  <li>Adapted seamlessly to changing project requirements, actively participating in agile development processes, including sprint planning and retrospectives.</li>
+                  <li>Contributed to the development and deployment of a large web application serving 60,000+ users as part of a team of more than 70 developers.</li>
+                  <li>Built and maintained frontend and backend features using JavaScript, React, Node.js, Go, SQL, and PostgreSQL.</li>
+                  <li>Resolved critical bugs and optimized performance to help maintain the project's stability in production.</li>
+                  <li>Worked with AWS, Docker, Git, and Jira, participating in Agile development including sprint planning and retrospectives while delivering features to deadlines.</li>
+                  <li>Used AI-assisted development tools to review, refactor, and clean up code, supporting maintainability and development efficiency.</li>
                 </ul>
               </div>
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -344,14 +282,16 @@
                 <h5 style="text-align:left;">March 2022 - July 2022</h5>
                 <p style="text-align:left;color:#fff"><em>Machine Learning Engineer</em></p>
                 <ul style="text-align:left;">
-                  <li>Developed and trained TensorFlow-based deep learning models for audio noise reduction, boosting accuracy by 50% over the previous solution.</li>
-                  <li>Translated PyTorch models to TensorFlow, authored C++ implementations for mobile deploymen.</li>
+                  <li>Developed and trained a TensorFlow-based deep-learning model for audio noise reduction, improving model accuracy by 50% over the previous solution.</li>
+                  <li>Optimized mobile inference by implementing the model in C++ with Android Neural Networks API (NNAPI), improving mobile performance by 20%.</li>
+                  <li>Translated PyTorch models to TensorFlow as part of the model development workflow.</li>
+                  <li>Worked across model development, inference optimization, and mobile integration with practical performance and deployment constraints in mind.</li>
                 </ul>
               </div>
                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="\" style="color:#12d640">XenEva Studio</a><br> </h4>
+                <h4 style="text-align:left;"><a href="https://xenevastudio.github.io/" target="_blank" rel="noopener" style="color:#12d640">XenEva Studio</a><br> </h4>
                 <h5 style="text-align:left;">2019 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Game Developer</em></p>
+                <p style="text-align:left;color:#fff"><em>Founder & Developer</em></p>
                 <ul style="text-align:left;">
                   <li>Developed and implemented core gameplay mechanics, features, and systems in Unity 3D using C#.</li>
                   <li>Designed and implemented a robust NPC system utilizing Finite State Machine (FSM).</li>
@@ -384,130 +324,161 @@
     </div>
   </section>
 
-  <!-- End Experience Section -->
+  <!-- ======= Education ======= -->
+  <section id="education" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="education-grid">
+        <article class="education-card education-card-current">
+          <div class="education-card-top">
+            <span class="education-date">OCT 2026 — PRESENT</span>
+            <span class="education-status"><i></i> IN PROGRESS</span>
+          </div>
+          <div class="education-institution">
+            <div class="education-logo education-logo-luh"><img src="assets/img/education/Leibniz-Universität_Hannover.svg" alt="Leibniz University Hannover logo" loading="lazy"></div>
+            <div><h3>Leibniz University Hannover</h3><p>Hannover, Germany</p></div>
+          </div>
+          <div class="education-card-divider"></div>
+          <p class="education-degree">M.Sc. in Computer Science</p>
+          <p class="education-note">Currently pursuing a master’s degree in computer science.</p>
+          <div class="education-coursework"><span>Deep Learning</span><span>Interpretable Machine Learning</span><span>Creation and Application of Knowledge Graphs</span></div>
+        </article>
 
-  <!-- ======= Problem Solving Section ======= -->
+        <article class="education-card">
+          <div class="education-card-top">
+            <span class="education-date">JAN 2017 — MAY 2023</span>
+            <span class="education-status education-status-complete">COMPLETED</span>
+          </div>
+          <div class="education-institution">
+            <div class="education-logo education-logo-gstu"><img src="assets/img/education/GSTU_Logo.png" alt="Gopalganj Science and Technology University logo" loading="lazy"></div>
+            <div><h3><a href="https://www.gstu.edu.bd/s/" target="_blank" rel="noopener">Gopalganj Science and Technology University <span>↗</span></a></h3><p>Bangladesh</p></div>
+          </div>
+          <div class="education-card-divider"></div>
+          <p class="education-degree">BSc (Honours) in Computer Science and Engineering</p>
+          <p class="education-note">CGPA: 3.24 / 4.00</p>
+          <div class="education-coursework"><span>Database Management Systems</span><span>Machine Learning</span><span>Software Engineering</span><span>Data Structures</span><span>Design and Analysis of Algorithms</span></div>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======= Programming ======= -->
   <section id="programming" class="services">
     <div class="container">
       <div class="section-title">
-        <h2>Problem Solving</h2>
+        <h2>Programming</h2>
       </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-
-            <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/programming/cf.jpg" class="img-fluid" alt="">
+      <div class="programming-online">
+        <h3>Online programming</h3>
+        <div class="programming-profile-grid" data-aos="fade-up">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/programming/cf.jpg" class="img-fluid" alt="Codeforces logo">
               <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
               <!-- <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>MS in Computer Science</em></p> -->
               <h5 style="text-align:center;padding: 0px 10px; padding: 10px 10px;">Expert/Blue</h5>
               <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Max Rating: 1816 -  Top 2% in global rating</h6>
               <h6 style="text-align:center;color:#fff;padding: 0px 10px; color: white">ID: <a style="color: blue" href="https://codeforces.com/profile/alshahreyaj">alshahreyaj</a>/<a style="color: blue" href="https://codeforces.com/profile/ziac">ziac</a></h6>
             </div>
-            <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/programming/cc.jpg" class="img-fluid" alt="">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/programming/cc.jpg" class="img-fluid" alt="CodeChef logo">
               <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
               <!-- <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>MS in Computer Science</em></p> -->
               <h5 style="text-align:center;padding: 0px 10px; padding: 10px 10px;">5*/Yellow</h5>
               <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Max Rating: 2081 - Top 1% in global rating</h6>
               <h6 style="text-align:center;color:#fff;padding: 0px 10px;">ID: <a style="color: yellow" href="https://www.codechef.com/users/alshahreyaj">alshahreyaj</a></h6>
             </div>
-          </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="150">
+              <img src="assets/img/programming/LeetCode_Sharing.png" class="img-fluid" alt="LeetCode logo">
+              <h5 style="text-align:center;padding: 10px;">LeetCode</h5>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">120 problems solved</h6>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Profile: <a style="color: #ffa116" href="https://leetcode.com/u/alshahreyaj/" target="_blank" rel="noopener">alshahreyaj ↗</a></h6>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/programming/default.jpg" class="img-fluid programming-toph-logo" alt="Toph competitive programming platform logo">
+              <h5 style="text-align:center;padding: 10px;">Toph</h5>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">15 problem sets · 122 problems solved</h6>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Rating: 1913 (SS) · Global rank: #85</h6>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Profile: <a style="color: #56b4ff" href="https://toph.co/u/Riaz_BSMRSTU" target="_blank" rel="noopener">Riaz_BSMRSTU ↗</a></h6>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="250">
+              <img src="assets/img/programming/lightoj-logo.svg" class="img-fluid" alt="LightOJ logo">
+              <h5 style="text-align:center;padding: 10px;">LightOJ</h5>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">60 problems solved</h6>
+              <h6 style="text-align:center;color:#fff;padding: 0px 10px;">Profile: <a style="color: #f3aa42" href="https://lightoj.com/user/alshahreyaj" target="_blank" rel="noopener">alshahreyaj ↗</a></h6>
+            </div>
         </div>
       </div>
-
-
-    <div class="portfolio">
-    <div class="container" style="display: none;">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/2BTJ636Q2E93?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-           </div>
-          </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Algorithms-Design and Analysis</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/6THRQXYE9EHZ?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+      <div class="programming-contests" data-aos="fade-up">
+        <h3>Programming contests</h3>
+        <div class="programming-contest-list">
+          <a class="programming-contest" href="assets/img/certification/icpc-2018.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2018</span><span class="programming-contest-name"><strong>ICPC Asia Dhaka Regional Contest - 2018</strong><small>BSMRSTU · Hosted by Daffodil International University · November 10, 2018</small></span><span class="programming-contest-result">Honorable Mention <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/icpc-2019.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2019</span><span class="programming-contest-name"><strong>ICPC Asia Dhaka Regional Contest - 2019</strong><small>Team BSMRSTU · Certificate lists Al ShahReyaj, Naimul Hasan, and Md. Jisan Shaikh</small></span><span class="programming-contest-result">51st place <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/icpc-2020.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2020</span><span class="programming-contest-name"><strong>ICPC Asia Dhaka Regional Contest - 2020</strong><small>Team BSMRSTU_Comfort_Zone_Crackers · Held May 28–29, 2021 · Bangabandhu Sheikh Mujibur Rahman University, Kishoreganj</small></span><span class="programming-contest-result">36th place <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/ncpc-2018.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2018</span><span class="programming-contest-name"><strong>National Collegiate Programming Contest - 2018</strong><small>Team BSMRSTU StandBy · Hosted by IUBAT, Dhaka · August 4, 2018</small></span><span class="programming-contest-result">Participant <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/ncpc-2020.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2020</span><span class="programming-contest-name"><strong>National Collegiate Programming Contest - 2020</strong><small>Organized by ICT Division and Bangladesh Computer Council · Hosted by MIST</small></span><span class="programming-contest-result">Participant <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/ugv-contest-certificate.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2019</span><span class="programming-contest-name"><strong>1st UGV Carnival Programming Contest</strong><small>University of Global Village · November 15, 2019</small></span><span class="programming-contest-result">Participant <b>↗</b></span></a>
+          <a class="programming-contest" href="assets/img/certification/bitfest-2019.jpg" target="_blank" rel="noopener"><span class="programming-contest-year">2019</span><span class="programming-contest-name"><strong>BITFEST 2019 Programming Contest</strong><small>KUET Department of CSE · Powered by weDevs</small></span><span class="programming-contest-result">Participant · Brain Craft Ltd. <b>↗</b></span></a>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ucsd.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Algorithmic Toolbox</h4>
-              <div class="portfolio-links">
-                <a href="https://coursera.org/share/98bbfb990484fac370d5e5ed14334ea4" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 0px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Deep Learning with Tensorflow</h4>
-              <div class="portfolio-links">
-                <a href="https://drive.google.com/file/d/1FSwPt19EzY_tpvqkE6igtLf3gccKcssC/view?usp=sharing" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 370px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning with Python</h4>
-              <div class="portfolio-links">
-                <a href="https://drive.google.com/file/d/1gimySw_NPzCJ54dqZ2j2wYyz-JDOg-S0/view?usp=sharing" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project" style="position: absolute; left: 740px; top: 218.875px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/dai.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Neural Networks and Deep Learning</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/ELXZ6FE2BU7X?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-    </div>
-
   </section>
-  <!-- End Education Section -->
 
+  <!-- ======= Certifications & Achievements ======= -->
+  <section id="certifications" class="services">
+    <div class="container">
+      <div class="education-certifications">
+        <div class="section-title"><h2>Certificates &amp; Achievements</h2></div>
+        <div class="certification-grid">
+        <a class="certification-card" href="assets/img/certification/icpc-2018.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/icpc-2018.jpg" alt="ICPC Dhaka Regional 2018 honorable mention certificate" loading="lazy">
+          <div class="certification-card-copy"><span>22ND ICPC DHAKA REGIONAL <i>·</i> 2018</span><h3>ICPC Dhaka Regional 2018</h3><p>Honorable Mention · Hosted by Daffodil International University</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/icpc-2019.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/icpc-2019.jpg" alt="ICPC Dhaka Regional 2019 certificate of achievement for 51st place" loading="lazy">
+          <div class="certification-card-copy"><span>ICPC DHAKA REGIONAL <i>·</i> 2019</span><h3>ICPC Dhaka Regional 2019</h3><p>51st place · Team BSMRSTU</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/icpc-2020.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/icpc-2020.jpg" alt="2020 ICPC Asia Dhaka Regional certificate of achievement for 36th place" loading="lazy">
+          <div class="certification-card-copy"><span>ICPC ASIA DHAKA REGIONAL <i>·</i> 2020</span><h3>2020 ICPC Asia Dhaka Regional</h3><p>36th place · Held May 28–29, 2021 · Team BSMRSTU_Comfort_Zone_Crackers</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/ncpc-2018.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/ncpc-2018.jpg" alt="IUBAT National Collegiate Programming Contest 2018 certificate" loading="lazy">
+          <div class="certification-card-copy"><span>IUBAT NCPC <i>·</i> 2018</span><h3>IUBAT National Collegiate Programming Contest 2018</h3><p>Participant · Team BSMRSTU StandBy</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/ncpc-2020.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/ncpc-2020.jpg" alt="National Collegiate Programming Contest 2020 participation certificate" loading="lazy">
+          <div class="certification-card-copy"><span>ICT DIVISION &amp; BANGLADESH COMPUTER COUNCIL <i>·</i> 2020</span><h3>National Collegiate Programming Contest 2020</h3><p>Participant · Organized by ICT Division and Bangladesh Computer Council · Hosted by MIST</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/ugv-contest-certificate.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/ugv-contest-certificate.jpg" alt="Programming contest participant certificate from the 1st UGV Carnival 2019" loading="lazy">
+          <div class="certification-card-copy"><span>1ST UGV CARNIVAL <i>·</i> 2019</span><h3>UGV Carnival Programming Contest 2019</h3><p>Participant · University of Global Village · November 15, 2019</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/bitfest-2019.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/bitfest-2019.jpg" alt="BITFEST 2019 programming contest participation certificate" loading="lazy">
+          <div class="certification-card-copy"><span>BITFEST 2019 <i>·</i> KUET</span><h3>BITFEST 2019 Programming Contest</h3><p>Participant · Organized by KUET CSE · Powered by weDevs</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/ios-app-training.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/ios-app-training.jpg" alt="Certificate of competence for 200-hour mobile application developer training" loading="lazy">
+          <div class="certification-card-copy"><span>ICT DIVISION <i>·</i> 2018</span><h3>Mobile Application Developer (iOS)</h3><p>200-hour training · Certificate of competence</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/physics-olympiad-certificate.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/physics-olympiad-certificate.jpg" alt="Bangladesh Physics Olympiad 2015 divisional round certificate" loading="lazy">
+          <div class="certification-card-copy"><span>BANGLADESH PHYSICS OLYMPIAD <i>·</i> 2015</span><h3>Physics Olympiad — Divisional Round</h3><p>Category C · Certificate of participation</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        <a class="certification-card" href="assets/img/certification/python.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/certification/python.jpg" alt="Analytics Vidhya Introduction to Python course completion certificate" loading="lazy">
+          <div class="certification-card-copy"><span>ANALYTICS VIDHYA <i>·</i> 2021</span><h3>Introduction to Python</h3><p>Free course · Certificate of completion</p><b>View certificate <strong>↗</strong></b></div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-  <!-- Start Project Section -->
+  <!-- ======= Projects ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
 
@@ -520,37 +491,202 @@
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">Games</li>
-            <li data-filter=".filter-project">Project</li>
+            <li data-filter=".filter-project">Other Projects</li>
           </ul>
         </div>
       </div>
 
-      <div class="row portfolio-container">
+      <div class="row portfolio-container project-list">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Battle of Agents</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/boa.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/battleofagents.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+        <div class="col-12 portfolio-item filter-project">
+          <article class="project-list-card">
+            <img class="project-list-art project-list-art-banner" src="assets/img/project/Dapple.png" alt="Dapple private AI tools artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">ANDROID APP <i>·</i> PRIVATE AI TOOLS</span>
+              <h3>Dapple</h3>
+              <p>A collection of private AI tools designed to work offline, including photo enhancement, background removal, and speech cleanup.</p>
+              <div class="project-list-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.xenevastudio.dapple" target="_blank" rel="noopener">Google Play <span>↗</span></a>
               </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Designed to run AI features on-device, so downloaded models can power image and audio tools offline.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>On-device AI models · Image processing · Speech denoising</p></div>
+                </div>
+              </details>
             </div>
-          </div>
+          </article>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>The Last City - Survival</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/tlc.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/tlc.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/boa.jpg" alt="Battle of Agents artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">MOBILE GAME <i>·</i> MULTIPLAYER SHOOTER</span>
+              <h3>Battle of Agents</h3>
+              <p>An online team-based shooter with real-time PvP battles. Build a squad, choose your agent, and compete across fast-paced game modes.</p>
+              <div class="project-list-actions">
+                <a href="projects/battleofagents.html">Project details <span>↗</span></a>
+                <a href="https://play.google.com/store/apps/details?id=com.XenevaStudio.BattleOfAgents" target="_blank" rel="noopener">Google Play <span>↗</span></a>
               </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Solo-developed as a third-person shooter with local and online multiplayer, zombie co-op, bot practice, and mobile performance in mind. Netcode for GameObjects supports networked play.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C# · Netcode for GameObjects · Blender · Photoshop</p></div>
+                </div>
+              </details>
             </div>
-          </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/tlc_cover.png" alt="The Last City survival game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">MOBILE GAME <i>·</i> SURVIVAL</span>
+              <h3>The Last City</h3>
+              <p>Survive a post-apocalyptic city by exploring, gathering resources, crafting upgrades, and facing the threats left behind.</p>
+              <div class="project-list-actions">
+                <a href="projects/tlc.html">Project details <span>↗</span></a>
+                <a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.TheLastCityHuntersOdyssey" target="_blank" rel="noopener">Google Play <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Built as an offline, open-world third-person survival RPG. The codebase uses Singleton and Observer patterns to organize game systems.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C#</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/boom-itch.png" alt="Boom! brain puzzle game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">MOBILE GAME <i>·</i> BRAIN PUZZLE</span>
+              <h3>Boom!</h3>
+              <p>A single-player physics puzzle game. Move objects into place, line up cannon shots, and clear challenging levels.</p>
+              <div class="project-list-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.Boom" target="_blank" rel="noopener">Google Play <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Uses drag-and-drop placement and physics-based interactions to let players set up cannon shots and solve progressively harder levels.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C# · Physics-based gameplay</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art project-list-art-banner" src="assets/img/project/Island%20Courier.png" alt="Island Courier delivery game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">MOBILE GAME <i>·</i> DELIVERY SIMULATION</span>
+              <h3>Island Courier</h3>
+              <p>Build a delivery business across a large island: take on jobs, choose vehicles for each load, and upgrade your fleet.</p>
+              <div class="project-list-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.xeneva.colormatching" target="_blank" rel="noopener">Google Play <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Structured around repeatable delivery jobs, vehicle choice, and upgrades, with progression opening up larger jobs and more of the island.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C#</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/adventure-of-arlo-and-mini.png" alt="Adventure of Arlo and Mini game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">ITCH.IO GAME <i>·</i> CO-OP ADVENTURE</span>
+              <h3>Adventure of Arlo &amp; Mini</h3>
+              <p>A two-player 3D platform adventure. Arlo and Mini have different abilities, so work together to evade cats and make it home.</p>
+              <div class="project-list-actions">
+                <a href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener">Play on itch.io <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Designed for two players sharing one screen. Arlo controls gates while faster Mini distracts enemies, making cooperation central to each level.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C# · 3D platforming</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/boom-itch.png" alt="Boom! puzzle game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">ITCH.IO GAME <i>·</i> PHYSICS PUZZLE</span>
+              <h3>Boom!</h3>
+              <p>Arrange a rocket launcher, gravity ball, and bouncer wall to take out an angry robot in a single shot.</p>
+              <div class="project-list-actions">
+                <a href="https://alshahreyaj.itch.io/boom" target="_blank" rel="noopener">Play on itch.io <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Solo-developed across game design, programming, and level design. Each puzzle asks players to place a rocket launcher, gravity ball, and bouncer wall to hit the robot in one shot.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C# · 2D physics</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art" src="assets/img/project/nightmare.png" alt="Nightmares game artwork" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">ITCH.IO GAME <i>·</i> PUZZLE</span>
+              <h3>Nightmares</h3>
+              <p>Help Emily find a way out of her nightmares in this puzzle game made for Hack-A-Jam 2021.</p>
+              <div class="project-list-actions">
+                <a href="https://itch.io/jam/iutcs-hack-a-jam-2021/rate/1334065" target="_blank" rel="noopener">View jam project <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>Created for Hack-A-Jam 2021 as a puzzle game about helping Emily escape her nightmares.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Unity · C# · Game-jam development</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 portfolio-item filter-app">
+          <article class="project-list-card">
+            <img class="project-list-art project-list-art-dice" src="assets/img/project/thedice.png" alt="Dice Masters browser game" loading="lazy">
+            <div class="project-list-copy">
+              <span class="project-list-type">BROWSER GAME <i>·</i> PLAY AGAINST AI</span>
+              <h3>Dice Masters</h3>
+              <p>A quick dice game where you challenge an AI opponent and race to reach 5,000 points first.</p>
+              <div class="project-list-actions">
+                <a href="https://thedice.netlify.app/" target="_blank" rel="noopener">Play TheDice <span>↗</span></a>
+              </div>
+              <details class="project-build-notes">
+                <summary>How it was built &amp; tools</summary>
+                <div class="project-build-grid">
+                  <div><span>BUILD APPROACH</span><p>A browser-based dice game with an AI opponent and a first-to-5,000 scoring goal.</p></div>
+                  <div><span>TOOLS &amp; TECHNOLOGY</span><p>Browser-based game · AI opponent</p></div>
+                </div>
+              </details>
+            </div>
+          </article>
         </div>
 
         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project">
@@ -570,151 +706,121 @@
     </div>
   </section>
 
-  <!-- End Project Section -->
-
-
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
+  <!-- ======= XenEva Studio ======= -->
+  <section id="studio" class="studio-section">
     <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
+      <div class="section-title"><h2>XenEva Studio</h2></div>
+      <div class="studio-layout">
+        <div class="studio-intro">
+          <p class="studio-kicker">INDEPENDENT GAME DEVELOPMENT &amp; PUBLISHING <span>·</span> 2019—PRESENT</p>
+          <h3>From first build<br>to players’ hands.</h3>
+          <p>XenEva Studio is my independent game studio, where I develop and publish original games. I’ve worked individually on more than ten projects and released games through Google Play and itch.io, taking on gameplay programming, game systems, and the work of bringing each title to players.</p>
+          <div class="studio-actions">
+            <a href="https://xenevastudio.github.io/" target="_blank" rel="noopener">Visit XenEva Studio <span>↗</span></a>
+            <a href="https://alshahreyaj.itch.io/" target="_blank" rel="noopener">Browse games on itch.io <span>↗</span></a>
+          </div>
+        </div>
+        <div class="studio-release-catalog" aria-label="XenEva Studio Google Play releases">
+          <div class="studio-release-heading"><span>GOOGLE PLAY CATALOG</span><span>05 RELEASES</span></div>
+          <div class="studio-releases">
+          <div class="studio-release-grid">
+            <a class="studio-release" href="https://play.google.com/store/apps/details?id=com.xenevastudio.dapple" target="_blank" rel="noopener">
+              <img class="release-art release-art-contain" src="assets/img/project/Dapple.png" alt="Dapple local AI tools artwork" loading="lazy">
+              <span class="release-copy"><strong>Dapple</strong><small>Local AI tools</small><span class="release-description">A mobile utility app bringing local AI tools into one place.</span></span><span class="release-store" aria-hidden="true">↗</span>
+            </a>
+            <a class="studio-release" href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.TheLastCityHuntersOdyssey" target="_blank" rel="noopener">
+              <img class="release-art" src="assets/img/project/tlc_cover.png" alt="The Last City survival game artwork" loading="lazy">
+              <span class="release-copy"><strong>The Last City</strong><small>Survival · Offline</small><span class="release-description">Explore a post-apocalyptic city, gather resources, craft upgrades, and fight to survive.</span></span><span class="release-store" aria-hidden="true">↗</span>
+            </a>
+            <a class="studio-release" href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.Boom" target="_blank" rel="noopener">
+              <img class="release-art" src="assets/img/project/boom-itch.png" alt="Boom! puzzle game artwork" loading="lazy">
+              <span class="release-copy"><strong>Boom!</strong><small>Brain puzzle · Single-player</small><span class="release-description">Move objects into place, line up cannon shots, and solve physics-based puzzle levels.</span></span><span class="release-store" aria-hidden="true">↗</span>
+            </a>
+            <a class="studio-release" href="https://play.google.com/store/apps/details?id=com.xeneva.colormatching" target="_blank" rel="noopener">
+              <img class="release-art release-art-contain" src="assets/img/project/Island%20Courier.png" alt="Island Courier game artwork" loading="lazy">
+              <span class="release-copy"><strong>Island Courier</strong><small>Delivery sim · Early access</small><span class="release-description">Take delivery jobs across an island, build a vehicle fleet, and upgrade your rides.</span></span><span class="release-store" aria-hidden="true">↗</span>
+            </a>
+            <a class="studio-release" href="https://play.google.com/store/apps/details?id=com.XenevaStudio.BattleOfAgents" target="_blank" rel="noopener">
+              <img class="release-art" src="assets/img/project/boa.jpg" alt="Battle of Agents game artwork" loading="lazy">
+              <span class="release-copy"><strong>Battle of Agents</strong><small>Online · Multiplayer</small><span class="release-description">Join team-based real-time PvP battles in an action-packed multiplayer shooter.</span></span><span class="release-store" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <a class="studio-store-link" href="https://play.google.com/store/apps/dev?id=6544129781446449531" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> View XenEva Studio on Google Play <span>↗</span></a>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" >
-            <div style="text-align: left; font-size: large;">
-              <h4>Proficient in:</h4>
-              <li><i class="icofont-rounded-right"></i> C++ </li>
-              <li><i class="icofont-rounded-right"></i> C# </li>
-              <li><i class="icofont-rounded-right"></i> Competitive Programming </li>
-              <li><i class="icofont-rounded-right"></i> Data Structures and Algorithms </li>
-              <li><i class="icofont-rounded-right"></i> JavaScript/jQuery </li>
-              <li><i class="icofont-rounded-right"></i> Algorithmic Problem Solving (solved 2000+ problems on various online platforms) </li>
-              <li><i class="icofont-rounded-right"></i> Game Programming (C# - Unity) </li>
-              <li><i class="icofont-rounded-right"></i> Backend Development </li>
-            </div>
-            
-
-            <!-- <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
-
-                </p> -->
-            </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Frameworks</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/dotnet/dotnet-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
+      <div class="itch-catalog">
+        <div class="itch-catalog-heading"><div><p class="studio-kicker">PERSONAL RELEASES</p><h3>My itch.io projects</h3></div><a href="https://alshahreyaj.itch.io/" target="_blank" rel="noopener">View all on itch.io <span>↗</span></a></div>
+        <div class="itch-project-grid">
+          <a class="itch-project-card" href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener"><img class="itch-project-art" src="assets/img/project/adventure-of-arlo-and-mini.png" alt="Adventure of Arlo and Mini game artwork" loading="lazy"><span class="itch-project-copy"><span class="itch-project-type">01 / ADVENTURE</span><strong>Adventure of Arlo &amp; Mini</strong><small>A two-player 3D platformer. Combine Arlo and Mini’s abilities to outsmart cats and find the way home.</small></span><b class="itch-project-arrow">↗</b></a>
+          <a class="itch-project-card" href="https://alshahreyaj.itch.io/boom" target="_blank" rel="noopener"><img class="itch-project-art" src="assets/img/project/boom-itch.png" alt="Boom! puzzle game artwork" loading="lazy"><span class="itch-project-copy"><span class="itch-project-type">02 / PUZZLE</span><strong>Boom!</strong><small>Position a rocket launcher, gravity ball, and bouncer wall to take out an angry robot in one shot.</small></span><b class="itch-project-arrow">↗</b></a>
+          <a class="itch-project-card" href="https://itch.io/jam/iutcs-hack-a-jam-2021/rate/1334065" target="_blank" rel="noopener"><img class="itch-project-art" src="assets/img/project/nightmare.png" alt="Nightmares game artwork" loading="lazy"><span class="itch-project-copy"><span class="itch-project-type">03 / PUZZLE</span><strong>Nightmares</strong><small>Help Emily navigate a surreal dream and find her way out of the nightmare.</small></span><b class="itch-project-arrow">↗</b></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- End Skills Section -->
-
-
-
-
-  <!-- Start Links section -->
+  <!-- ======= Resume & Links ======= -->
   <section id="links" class="services">
     <div class="container">
       <div class="section-title">
         <h2>Resume & Links</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume</a></h4>
-          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
-        </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-          <a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank"><div class="icon"><i class="icofont-link"></i></div></a>
-          <h4 class="title"><a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank">LeetCode Repository</a></h4>
-          <p class="description" style="color:#fff;"> The github repository contains leetcode problems solution in python.</p>
-        </div>
-        <!-- <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://techingenious.herokuapp.com/" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://techingenious.herokuapp.com/" target="_blank">Blog</a></h4>
-          <p class="description" style="color:#fff;">Blog containing articles on AI, coding, development</p>
-        </div> -->
+      <p class="links-intro">Explore my experience, code, and professional profile.</p>
+      <div class="links-showcase">
+        <article class="resume-feature" data-aos="fade-up">
+          <div class="resume-feature-top"><span class="resume-file-mark"><i class="bx bx-file-blank"></i><b>PDF</b></span><span class="resume-updated">CURRENT CV</span></div>
+          <div class="resume-feature-copy">
+            <p class="studio-kicker">4+ YEARS EXPERIENCE <span>·</span> SOFTWARE &amp; APPLIED AI</p>
+            <h3>Resume</h3>
+            <p>Software Engineer building scalable web applications and backend systems, with hands-on experience in machine learning and applied AI.</p>
+          </div>
+          <div class="resume-actions">
+            <a class="resume-action-primary" href="assets/docs/CV_English.pdf" target="_blank" rel="noopener">View resume <span>↗</span></a>
+            <a class="resume-action-secondary" href="assets/docs/CV_English.pdf" download="Al-Shahreyaj-CV.pdf">Download PDF <span>↓</span></a>
+          </div>
+        </article>
+        <nav class="profile-link-list" aria-label="Professional profiles">
+          <a class="profile-link-card" href="https://github.com/alshahreyaj" target="_blank" rel="noopener"><span class="profile-link-icon"><i class="bx bxl-github"></i></span><span><small>CODE &amp; PROJECTS</small><strong>GitHub</strong></span><b>↗</b></a>
+          <a class="profile-link-card" href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" rel="noopener"><span class="profile-link-icon"><i class="bx bxl-linkedin"></i></span><span><small>PROFESSIONAL NETWORK</small><strong>LinkedIn</strong></span><b>↗</b></a>
+          <a class="profile-link-card" href="https://leetcode.com/u/alshahreyaj/" target="_blank" rel="noopener"><span class="profile-link-icon"><i class="bx bx-code-alt"></i></span><span><small>PROBLEM SOLVING</small><strong>LeetCode</strong></span><b>↗</b></a>
+        </nav>
       </div>
     </div>
-  </section> <!--End Links Section -->
+  </section>
 
-
-  <!-- Start Contact Section -->
-
+  <!-- ======= Contact ======= -->
   <section id="contacts" class="contact">
     <div class="container">
 
       <div class="section-title">
         <h2>Contact</h2>
       </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Dhaka</p>
-            <p>Bangladesh</p>
-          </div>
+      <p class="contact-intro">Reach me by email or phone, or connect with me online.</p>
+      <div class="contact-grid">
+        <a class="contact-card contact-card-email" href="mailto:alshahreyaj@gmail.com">
+          <span class="contact-card-icon"><i class="bx bx-envelope"></i></span>
+          <span class="contact-card-copy"><small>EMAIL</small><strong>alshahreyaj@gmail.com</strong><em>Send me an email <b>↗</b></em></span>
+        </a>
+        <a class="contact-card" href="tel:+491631571643">
+          <span class="contact-card-icon"><i class="bx bx-phone-call"></i></span>
+          <span class="contact-card-copy"><small>PHONE</small><strong>+49 163 1571643</strong><em>Call or message me <b>↗</b></em></span>
+        </a>
+        <div class="contact-card contact-card-location">
+          <span class="contact-card-icon"><i class="bx bx-map"></i></span>
+          <span class="contact-card-copy"><small>BASED IN</small><strong>Hannover, Germany</strong></span>
         </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/alshahreyaj" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:alshahriaz@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>alshahriaz@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+8801865977883</p>
-          </div>
+        <div class="contact-card contact-card-social">
+          <span class="contact-card-icon"><i class="bx bx-share-alt"></i></span>
+          <span class="contact-card-copy"><small>FIND ME ONLINE</small><strong>Social profiles</strong><span class="contact-social-links"><a href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn ↗</a><a href="https://github.com/alshahreyaj" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub ↗</a></span></span>
         </div>
       </div>
       <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
     </div>
   </section>
+</main>
 
-  <!-- End Contact Section -->
+  <footer class="site-footer"><div class="container"><a class="brand" href="#home">AS<span>.</span></a><p>© 2026 Al Shahreyaj <span>·</span> Built with curiosity in Hannover.</p><div><a href="https://www.linkedin.com/in/alshahreyaj/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/alshahreyaj" target="_blank" rel="noopener">GitHub ↗</a></div></div></footer>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -729,7 +835,7 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Software Engineer", "Competitive Programmer", "Problem Solver", "Game Programmer"],
+      strings: ["full-stack engineering", "applied AI & machine learning", "game development", "reliable software"],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
