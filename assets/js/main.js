@@ -1,206 +1,81 @@
-/**
-* Template Name: Personal - v2.1.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-!(function($) {
-  "use strict";
+(() => {
+  const body = document.body;
+  const menuToggle = document.querySelector('.mobile-nav-toggle');
+  const navigation = document.querySelector('#primary-navigation');
+  const navLinks = Array.from(document.querySelectorAll('#primary-navigation a[href^="#"]'));
 
-  if (document.body.classList.contains('modern-portfolio')) {
-    var $body = $('body');
-    var $toggle = $('.mobile-nav-toggle');
-    var $nav = $('#primary-navigation');
+  const closeMenu = () => {
+    body.classList.remove('nav-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.setAttribute('aria-label', 'Open navigation');
+  };
 
-    function closeMobileNav() {
-      $body.removeClass('nav-open');
-      $toggle.attr({'aria-expanded': 'false', 'aria-label': 'Open navigation'});
-    }
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = !body.classList.contains('nav-open');
+    body.classList.toggle('nav-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  });
 
-    $toggle.on('click', function() {
-      var isOpen = !$body.hasClass('nav-open');
-      $body.toggleClass('nav-open', isOpen);
-      $toggle.attr({'aria-expanded': String(isOpen), 'aria-label': isOpen ? 'Close navigation' : 'Open navigation'});
-    });
+  navigation?.addEventListener('click', event => {
+    if (event.target.closest('a')) closeMenu();
+  });
 
-    $nav.on('click', 'a[href^="#"]', function() {
-      closeMobileNav();
-      $nav.find('li').removeClass('active');
-      $(this).closest('li').addClass('active');
-    });
+  document.addEventListener('click', event => {
+    if (body.classList.contains('nav-open') && !event.target.closest('#primary-navigation, .mobile-nav-toggle')) closeMenu();
+  });
 
-    $(document).on('click', function(event) {
-      if ($body.hasClass('nav-open') && !$(event.target).closest('#primary-navigation, .mobile-nav-toggle').length) closeMobileNav();
-    });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
 
-    if ('IntersectionObserver' in window) {
-      var navObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (!entry.isIntersecting) return;
-          var id = '#' + entry.target.id;
-          $nav.find('li').removeClass('active');
-          $nav.find('a[href="' + id + '"]').closest('li').addClass('active');
-        });
-      }, {rootMargin: '-25% 0px -65% 0px'});
-      document.querySelectorAll('.site-main > section[id]').forEach(function(section) { navObserver.observe(section); });
-    }
-
-    $(window).on('load', function() {
-      var $portfolioFilters = $('#portfolio-flters li');
-      var $portfolioItems = $('#portfolio .portfolio-item');
-      $portfolioFilters.on('click', function() {
-        var filter = $(this).data('filter');
-        $portfolioFilters.removeClass('filter-active');
-        $(this).addClass('filter-active');
-        $portfolioItems.each(function() {
-          var matches = filter === '*' || $(this).hasClass(filter.slice(1));
-          this.hidden = !matches;
+  if ('IntersectionObserver' in window) {
+    const activeMap = new Map([
+      ['education', '#programming'],
+      ['certifications', '#programming']
+    ]);
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const target = activeMap.get(entry.target.id) || `#${entry.target.id}`;
+        navLinks.forEach(link => {
+          const active = link.getAttribute('href') === target;
+          link.closest('li')?.classList.toggle('active', active);
         });
       });
-      if ($.fn.venobox) $('.venobox').venobox();
-    });
-    return;
+    }, {rootMargin: '-24% 0px -66% 0px'});
+    document.querySelectorAll('.site-main > section[id]').forEach(section => sectionObserver.observe(section));
   }
 
-  // Nav Menu
-  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
-      var target = $(hash);
-      if (target.length) {
-        e.preventDefault();
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if (hash == '#header') {
-          $('#header').removeClass('header-top');
-          $("section").removeClass('section-show');
-          return;
-        }
-
-        if (!$('#header').hasClass('header-top')) {
-          $('#header').addClass('header-top');
-          setTimeout(function() {
-            $("section").removeClass('section-show');
-            $(hash).addClass('section-show');
-          }, 350);
-        } else {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-
-        return false;
-
-      }
-    }
-  });
-
-  // Activate/show sections on load with hash links
-  if (window.location.hash) {
-    var initial_nav = window.location.hash;
-    if ($(initial_nav).length) {
-      $('#header').addClass('header-top');
-      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-      $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
-      setTimeout(function() {
-        $("section").removeClass('section-show');
-        $(initial_nav).addClass('section-show');
-      }, 350);
-    }
-  }
-
-  // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-    $('body').append('<div class="mobile-nav-overly"></div>');
-
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      $('.mobile-nav-overly').toggle();
-    });
-
-    $(document).click(function(e) {
-      var container = $(".mobile-nav, .mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-      }
-    });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
-  }
-
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, {
-    offset: '80%'
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
-
-  // Porfolio isotope and filter
-  $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+  const filterButtons = Array.from(document.querySelectorAll('.project-filter'));
+  const projectCards = Array.from(document.querySelectorAll('.project-card[data-category]'));
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      filterButtons.forEach(item => {
+        const selected = item === button;
+        item.classList.toggle('is-active', selected);
+        item.setAttribute('aria-pressed', String(selected));
+      });
+      projectCards.forEach(card => {
+        card.hidden = filter !== 'all' && card.dataset.category !== filter;
       });
     });
-
   });
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox();
-  });
-
-})(jQuery);
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const revealItems = document.querySelectorAll('[data-reveal]');
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('reveal-ready');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, {threshold: 0.08, rootMargin: '0px 0px -4% 0px'});
+    revealItems.forEach(item => revealObserver.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('is-visible'));
+  }
+})();
