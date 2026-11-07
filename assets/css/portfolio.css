@@ -287,14 +287,15 @@ body.modern-portfolio .experience-metrics strong { color:var(--text); font:600 1
 body.modern-portfolio .experience-metrics span { color:var(--muted); font-size:9px }
 
 /* Projects and case studies */
-body.modern-portfolio .projects-section { background:#0f1116 }
+body.modern-portfolio .projects-section { padding:72px 0; background:#0f1116 }
 body.modern-portfolio .projects-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:40px; max-width:none }
+body.modern-portfolio .projects-heading { margin-bottom:25px }
 body.modern-portfolio .projects-heading .section-intro { max-width:390px; margin-bottom:4px }
-body.modern-portfolio .project-filters { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 20px }
+body.modern-portfolio .project-filters { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 15px }
 body.modern-portfolio .project-filter { min-height:34px; padding:7px 12px; border:1px solid #383b42; border-radius:3px; background:transparent; color:#bfc1c5; cursor:pointer; font:500 10px var(--font-body); transition:background .18s,border-color .18s,color .18s }
 body.modern-portfolio .project-filter:hover { border-color:#8c6e50; color:var(--text) }
 body.modern-portfolio .project-filter.is-active { border-color:var(--accent); background:var(--accent-soft); color:#f0c496 }
-body.modern-portfolio .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px }
+body.modern-portfolio .project-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px }
 body.modern-portfolio .project-card {
   position:relative;
   display:flex;
@@ -308,17 +309,17 @@ body.modern-portfolio .project-card {
 }
 body.modern-portfolio .project-card:hover { transform:translateY(-3px); border-color:#705a45; box-shadow:0 12px 32px rgba(0,0,0,.2) }
 body.modern-portfolio .project-card-featured { grid-column:1/-1; display:grid; grid-template-columns:minmax(280px,.92fr) minmax(0,1.08fr) }
-body.modern-portfolio .project-art { display:block; width:100%; height:220px; object-fit:cover; background:#101319 }
-body.modern-portfolio .project-card-featured .project-art { height:100%; min-height:400px }
-body.modern-portfolio .project-copy { display:flex; flex:1; min-width:0; flex-direction:column; align-items:flex-start; padding:19px }
-body.modern-portfolio .project-card-featured .project-copy { justify-content:center; padding:26px 28px }
+body.modern-portfolio .project-art { display:block; width:100%; height:160px; object-fit:cover; background:#101319 }
+body.modern-portfolio .project-card-featured .project-art { height:100%; min-height:320px }
+body.modern-portfolio .project-copy { display:flex; flex:1; min-width:0; flex-direction:column; align-items:flex-start; padding:14px }
+body.modern-portfolio .project-card-featured .project-copy { justify-content:center; padding:18px 20px }
 body.modern-portfolio .project-meta { display:flex; flex-wrap:wrap; gap:7px 14px; color:#b8a18a; font:9px var(--font-mono); letter-spacing:.06em }
-body.modern-portfolio .project-copy h3 { margin:8px 0 6px; color:var(--text); font:600 22px/1.2 var(--font-display); letter-spacing:-.03em }
-body.modern-portfolio .project-card-featured .project-copy h3 { font-size:30px }
+body.modern-portfolio .project-copy h3 { margin:7px 0 5px; color:var(--text); font:600 20px/1.2 var(--font-display); letter-spacing:-.03em }
+body.modern-portfolio .project-card-featured .project-copy h3 { font-size:26px }
 body.modern-portfolio .project-copy>p { margin:0; color:#b1b3b8; font-size:11px; line-height:1.75 }
 body.modern-portfolio .project-tags { margin-top:13px }
 body.modern-portfolio .project-tags span { min-height:23px; padding:3px 7px; color:#c5c6c8; font-size:9px }
-body.modern-portfolio .project-case-study { width:100%; margin-top:14px; border-top:1px solid #343740 }
+body.modern-portfolio .project-case-study { width:100%; margin-top:11px; border-top:1px solid #343740 }
 body.modern-portfolio .project-case-study summary { position:relative; padding:10px 22px 0 0; color:#e0e0dc; cursor:pointer; font-size:10px; font-weight:600; list-style:none }
 body.modern-portfolio .project-case-study summary::-webkit-details-marker { display:none }
 body.modern-portfolio .project-case-study summary:after { content:"+"; position:absolute; right:2px; top:6px; color:var(--accent); font-size:17px; font-weight:400 }
@@ -376,6 +377,7 @@ body.modern-portfolio .contest-list .contest-view-label { color:var(--accent); f
 body.modern-portfolio .section-next-link { display:inline-flex; gap:12px; margin-top:18px; color:#dbb38d; font-size:11px; font-weight:600 }
 
 /* Education and supplementary certificates */
+body.modern-portfolio .education-section { padding-bottom:40px }
 body.modern-portfolio .education-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px }
 body.modern-portfolio .education-card { min-width:0; padding:20px; border:1px solid var(--line); border-radius:5px; background:var(--surface) }
 body.modern-portfolio .education-card-top { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; margin-bottom:18px }
@@ -397,8 +399,7 @@ body.modern-portfolio .education-degree { margin:0; color:#e0e1df; font-size:12p
 body.modern-portfolio .education-note { margin:5px 0 0; color:var(--muted); font-size:10px }
 body.modern-portfolio .education-coursework { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px }
 body.modern-portfolio .education-coursework span { padding:4px 7px; border:1px solid #383b42; border-radius:3px; color:#bfc1c4; font-size:9px }
-body.modern-portfolio .certifications-section { padding:28px 0 }
-body.modern-portfolio .certificate-heading { margin-bottom:14px }
+body.modern-portfolio .certificate-heading { margin:30px 0 14px }
 body.modern-portfolio .certificate-heading .section-kicker { margin-bottom:5px; font-size:8px }
 body.modern-portfolio .certificate-heading h2 { margin:0; color:var(--text); font:600 18px var(--font-display) }
 body.modern-portfolio .certificate-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px }
@@ -506,6 +507,7 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   html { scroll-padding-top:72px }
   body.modern-portfolio section { padding:69px 0; scroll-margin-top:66px }
   body.modern-portfolio section.section-show { padding-bottom:69px }
+  body.modern-portfolio .projects-section { padding:56px 0 }
   body.modern-portfolio .hero-section { min-height:auto; padding:54px 0 63px }
   body.modern-portfolio .hero-inner { grid-template-columns:1fr; gap:28px }
   body.modern-portfolio .hero-copy h1 { font-size:clamp(43px,10vw,64px); letter-spacing:-.05em }
@@ -515,12 +517,15 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .hero-highlights span { font-size:9px }
   body.modern-portfolio .projects-heading { align-items:flex-start; flex-direction:column; gap:10px }
   body.modern-portfolio .project-card-featured { grid-column:auto; display:flex }
-  body.modern-portfolio .project-card-featured .project-art { height:210px; min-height:0 }
-  body.modern-portfolio .project-card-featured .project-copy { padding:19px }
+  body.modern-portfolio .project-art { height:155px }
+  body.modern-portfolio .project-card-featured .project-art { height:155px; min-height:0 }
+  body.modern-portfolio .project-copy { padding:13px }
+  body.modern-portfolio .project-card-featured .project-copy { padding:14px }
   body.modern-portfolio .project-card-featured .project-copy h3 { font-size:23px }
   body.modern-portfolio .project-grid { grid-template-columns:1fr }
   body.modern-portfolio .programming-profile-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
   body.modern-portfolio .education-grid { grid-template-columns:1fr }
+  body.modern-portfolio .education-section { padding-bottom:32px }
   body.modern-portfolio .certificate-list { grid-template-columns:1fr }
   body.modern-portfolio .itch-project-grid { grid-template-columns:1fr }
   body.modern-portfolio .contact-layout { grid-template-columns:1fr }
@@ -594,7 +599,6 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .education-section { background:#efede7 }
   body.modern-portfolio .services,
   body.modern-portfolio .skills-section,
-  body.modern-portfolio .certifications-section,
   body.modern-portfolio .contact-section { background:#f6f4ef }
   body.modern-portfolio .projects-section { background:#f1efe9 }
   body.modern-portfolio #studio { background:#e9e5dc; border-color:#d3cec3 }

@@ -30,14 +30,10 @@
   });
 
   if ('IntersectionObserver' in window) {
-    const activeMap = new Map([
-      ['education', '#programming'],
-      ['certifications', '#programming']
-    ]);
     const sectionObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        const target = activeMap.get(entry.target.id) || `#${entry.target.id}`;
+        const target = `#${entry.target.id}`;
         navLinks.forEach(link => {
           const active = link.getAttribute('href') === target;
           link.closest('li')?.classList.toggle('active', active);
