@@ -793,23 +793,147 @@ body.modern-portfolio #education .portfolio .portfolio-links a {
   font-size:16px
 }
 
-body.modern-portfolio #experience .icon-box {
-  margin:0 0 14px;
-  padding:26px 30px;
-  position:relative
+body.modern-portfolio .experience-list {
+  display:grid;
+  gap:16px
 }
-body.modern-portfolio #experience .icon-box:before {
-  content:"";
-  position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  width:2px;
-  background:var(--lime);
-  opacity:.7
+body.modern-portfolio .experience-card {
+  display:grid;
+  grid-template-columns:132px minmax(0,1fr);
+  gap:26px;
+  padding:26px;
+  background:linear-gradient(120deg,rgba(24,37,30,.9),rgba(19,29,24,.92));
+  border:1px solid var(--line);
+  border-radius:9px;
+  transition:border-color .2s ease,transform .2s ease
 }
-body.modern-portfolio #experience .icon-box ul {
-  margin:12px 0 0
+body.modern-portfolio .experience-card:hover {
+  border-color:#506648;
+  transform:translateY(-2px)
+}
+body.modern-portfolio .experience-logo {
+  align-self:start;
+  width:132px;
+  height:112px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  padding:12px;
+  background:#f2f3f0;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:7px
+}
+body.modern-portfolio .experience-logo img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain
+}
+body.modern-portfolio .experience-logo-enosis {
+  padding:0;
+  background:#24122a
+}
+body.modern-portfolio .experience-logo-enosis img,
+body.modern-portfolio .experience-logo-xeneva img {
+  object-fit:cover
+}
+body.modern-portfolio .experience-logo-xeneva {
+  padding:0;
+  background:#071224
+}
+body.modern-portfolio .experience-content {
+  min-width:0
+}
+body.modern-portfolio .experience-heading {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:20px;
+  padding-bottom:15px;
+  border-bottom:1px solid var(--line)
+}
+body.modern-portfolio .experience-role {
+  margin:0 0 4px;
+  color:var(--lime);
+  font:11px/1.5 var(--mono);
+  letter-spacing:.04em;
+  text-transform:uppercase
+}
+body.modern-portfolio .experience-heading h3 {
+  margin:0;
+  color:var(--ink);
+  font-size:20px;
+  font-weight:700
+}
+body.modern-portfolio .experience-heading h3 a span {
+  color:var(--muted);
+  font-size:13px
+}
+body.modern-portfolio .experience-date {
+  flex:none;
+  margin-top:5px;
+  padding:5px 9px;
+  color:#cbd6cb;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  border-radius:4px;
+  font:10px/1.4 var(--mono)
+}
+body.modern-portfolio .experience-content ul {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px 28px;
+  margin:16px 0 0;
+  padding-left:17px;
+  color:#aebbb0;
+  font-size:12px;
+  line-height:1.75
+}
+body.modern-portfolio .experience-content li {
+  padding-left:2px
+}
+body.modern-portfolio .experience-content li::marker {
+  color:var(--lime)
+}
+@media (max-width:720px) {
+  body.modern-portfolio .experience-card {
+    grid-template-columns:76px minmax(0,1fr);
+    gap:16px;
+    padding:18px
+  }
+  body.modern-portfolio .experience-logo {
+    width:76px;
+    height:76px;
+    padding:8px
+  }
+  body.modern-portfolio .experience-logo-enosis,
+  body.modern-portfolio .experience-logo-xeneva {
+    padding:0
+  }
+  body.modern-portfolio .experience-heading {
+    display:block
+  }
+  body.modern-portfolio .experience-date {
+    display:inline-block;
+    margin-top:9px
+  }
+  body.modern-portfolio .experience-content ul {
+    grid-template-columns:1fr;
+    gap:7px
+  }
+}
+@media (max-width:440px) {
+  body.modern-portfolio .experience-card {
+    grid-template-columns:1fr
+  }
+  body.modern-portfolio .experience-logo {
+    width:100%;
+    height:92px
+  }
+  body.modern-portfolio .experience-logo-enosis img,
+  body.modern-portfolio .experience-logo-xeneva img {
+    object-fit:contain
+  }
 }
 body.modern-portfolio #programming .icon-box {
   width:100%;
