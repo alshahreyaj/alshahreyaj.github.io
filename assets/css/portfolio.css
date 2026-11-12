@@ -226,9 +226,9 @@ body.modern-portfolio .section-shell { border-top:1px solid rgba(255,255,255,.03
 body.modern-portfolio .section-shell .container { position:relative }
 
 /* About and expertise */
-body.modern-portfolio .about-intro { max-width:890px; margin:0 0 30px; color:#c7c8c8; font-size:15px; line-height:1.9 }
+body.modern-portfolio .about-intro { max-width:none; margin:0 0 30px; color:#c7c8c8; font-size:15px; line-height:1.9 }
 body.modern-portfolio .about-intro p { margin:0 0 13px }
-body.modern-portfolio .expertise-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px }
+body.modern-portfolio .expertise-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px }
 body.modern-portfolio .expertise-card {
   display:grid;
   grid-template-columns:31px minmax(0,1fr);
@@ -352,13 +352,42 @@ body.modern-portfolio .programming-summary strong { color:var(--accent); font:60
 body.modern-portfolio .programming-summary span { color:var(--muted); font-size:10px }
 body.modern-portfolio .programming-profile-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px }
 body.modern-portfolio .programming-card { display:grid; grid-template-columns:58px minmax(0,1fr); align-items:center; gap:13px; min-width:0; padding:13px; border:1px solid var(--line); border-radius:4px; background:var(--surface) }
+body.modern-portfolio .programming-card-spotlight { display:flex; min-height:244px; flex-direction:column; align-items:stretch; gap:0; padding:17px; border-color:#806547; background:linear-gradient(145deg,rgba(214,155,99,.08),var(--surface) 58%); box-shadow:inset 0 2px 0 var(--accent) }
 body.modern-portfolio .programming-card>img { display:block; width:58px; height:58px; padding:5px; border-radius:3px; background:#f2f1ed; object-fit:contain }
 body.modern-portfolio .programming-card h3 { margin:0 0 3px; color:var(--text); font-size:13px; font-weight:600 }
+body.modern-portfolio .spotlight-heading { display:flex; align-items:center; gap:11px; min-width:0 }
+body.modern-portfolio .spotlight-heading>img { display:block; flex:none; width:43px; height:43px; padding:4px; border:1px solid var(--line); border-radius:4px; background:#fff; object-fit:contain }
+body.modern-portfolio .spotlight-heading>div { min-width:0 }
+body.modern-portfolio .spotlight-kicker { display:block; margin-bottom:2px; color:var(--accent); font:7px var(--font-mono); letter-spacing:.07em }
+body.modern-portfolio .spotlight-heading h3 { margin:0; font-size:15px }
+body.modern-portfolio .spotlight-tier { display:inline-flex; align-items:center; gap:5px; margin-left:auto; padding:4px 8px; border:1px solid rgba(214,155,99,.4); border-radius:3px; color:var(--accent); font:600 9px/1 var(--font-mono); letter-spacing:.02em; white-space:nowrap }
+body.modern-portfolio .spotlight-tier::before { content:""; display:inline-block; width:5px; height:5px; border-radius:50%; background:currentColor }
+body.modern-portfolio .spotlight-tier-blue { color:#5ea2ff; border-color:rgba(94,162,255,.45); background:rgba(94,162,255,.1) }
+body.modern-portfolio .spotlight-tier-yellow { color:#facc15; border-color:rgba(250,204,21,.45); background:rgba(250,204,21,.1) }
+body.modern-portfolio .spotlight-tier-dark-yellow { color:#e59312; border-color:rgba(229,147,18,.45); background:rgba(229,147,18,.1) }
+body.modern-portfolio .spotlight-score { display:flex; align-items:baseline; gap:8px; margin-top:14px; padding-top:11px; border-top:1px solid var(--line) }
+body.modern-portfolio .spotlight-score strong { color:var(--text); font:600 30px/1 var(--font-display); letter-spacing:-.04em }
+body.modern-portfolio .spotlight-score-blue strong { color:#5ea2ff }
+body.modern-portfolio .spotlight-score-yellow strong { color:#facc15 }
+body.modern-portfolio .spotlight-score-dark-yellow strong { color:#e59312 }
+body.modern-portfolio .spotlight-score span { color:var(--muted); font-size:9px }
+body.modern-portfolio .spotlight-points { margin-top:9px }
+body.modern-portfolio .spotlight-points>span { display:inline-flex; align-items:baseline; gap:5px; padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:rgba(214,155,99,.06); color:var(--text); font-size:9px; font-weight:600 }
+body.modern-portfolio .spotlight-points small { color:var(--muted); font-size:8px; font-weight:400 }
+body.modern-portfolio .spotlight-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:5px; margin-top:9px }
+body.modern-portfolio .spotlight-stats>div { display:grid; gap:2px; min-width:0; padding:6px 5px; border:1px solid var(--line); border-radius:3px; background:rgba(214,155,99,.05) }
+body.modern-portfolio .spotlight-stats strong { color:var(--text); font:600 11px var(--font-display) }
+body.modern-portfolio .spotlight-stats small { color:var(--muted); font-size:7px; line-height:1.3 }
 body.modern-portfolio .programming-card p { margin:0 }
 body.modern-portfolio .programming-card .profile-rank { color:#e5c19d; font-size:10px; font-weight:600 }
 body.modern-portfolio .profile-rank span { color:var(--muted) }
 body.modern-portfolio .programming-card .profile-note { margin-top:3px; color:#9699a0; font-size:9px }
 body.modern-portfolio .programming-card a { display:inline-block; margin-top:6px; color:#d5a979; font-size:9px; font-weight:600 }
+body.modern-portfolio .programming-card-spotlight>a { align-self:flex-start; margin-top:auto; padding-top:11px; font-size:9px }
+body.modern-portfolio .spotlight-links { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-top:auto; padding-top:11px; font-size:9px }
+body.modern-portfolio .spotlight-links a { margin-top:0; font-size:9px }
+body.modern-portfolio .spotlight-links-label { color:var(--muted); font:9px var(--font-mono) }
+body.modern-portfolio .spotlight-link-sep { color:var(--muted); font-size:9px }
 body.modern-portfolio .contest-block { margin-top:38px }
 body.modern-portfolio .subsection-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:15px; margin-bottom:12px }
 body.modern-portfolio .subsection-heading .section-kicker { margin:0 0 5px }
@@ -374,6 +403,13 @@ body.modern-portfolio .contest-list strong { color:#e7e7e3; font-size:11px; font
 body.modern-portfolio .contest-list small { margin-top:3px; color:#9ea1a8; font-size:9px }
 body.modern-portfolio .contest-list b { color:#d6b28e; font-size:10px; font-weight:500; text-align:right }
 body.modern-portfolio .contest-list .contest-view-label { color:var(--accent); font-size:8px; font-weight:500 }
+body.modern-portfolio .problem-setting-block { margin-top:32px }
+body.modern-portfolio .problem-setting-intro { margin:0 0 10px; color:#a2a5ab; font-size:11px }
+body.modern-portfolio .problem-setting-all-link { color:var(--accent); font:500 10px var(--font-mono) }
+body.modern-portfolio .problem-setting-tags { display:flex; flex-wrap:wrap; gap:8px }
+body.modern-portfolio .problem-setting-tags a { display:inline-flex; align-items:center; gap:5px; padding:6px 10px; border:1px solid var(--line); border-radius:3px; background:var(--surface); color:#d2d4d8; font-size:10px; transition:border-color .18s,color .18s }
+body.modern-portfolio .problem-setting-tags a span { color:var(--accent); font-size:9px }
+body.modern-portfolio .problem-setting-tags a:hover { border-color:#806547; color:var(--accent) }
 body.modern-portfolio .section-next-link { display:inline-flex; gap:12px; margin-top:18px; color:#dbb38d; font-size:11px; font-weight:600 }
 
 /* Education and supplementary certificates */
@@ -747,6 +783,16 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .programming-card .profile-rank { color:#30343b }
   body.modern-portfolio .hero-art { background:#e5e1d8; border-color:#d3cec3 }
   body.modern-portfolio .studio-release .release-store { border-color:#cdbda9 }
+  body.modern-portfolio .spotlight-tier-blue { color:#1d4ed8; border-color:rgba(29,78,216,.45); background:rgba(29,78,216,.08) }
+  body.modern-portfolio .spotlight-tier-yellow { color:#854d0e; border-color:rgba(161,98,7,.45); background:rgba(234,179,8,.14) }
+  body.modern-portfolio .spotlight-tier-dark-yellow { color:#78350f; border-color:rgba(180,83,9,.45); background:rgba(217,119,6,.14) }
+  body.modern-portfolio .spotlight-score-blue strong { color:#1d4ed8 }
+  body.modern-portfolio .spotlight-score-yellow strong { color:#854d0e }
+  body.modern-portfolio .spotlight-score-dark-yellow strong { color:#78350f }
+  body.modern-portfolio .problem-setting-intro { color:#5e626a }
+  body.modern-portfolio .problem-setting-all-link { color:#824a22 }
+  body.modern-portfolio .problem-setting-tags a { background:#fff; color:#30343b; border-color:#d5d0c6 }
+  body.modern-portfolio .problem-setting-tags a:hover { border-color:#824a22; color:#824a22 }
 }
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto }
