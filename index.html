@@ -199,7 +199,7 @@
               <li>Ported PyTorch models over to TensorFlow and tuned them to run smoothly and efficiently on mobile hardware.</li>
             </ul>
             <div class="experience-metrics"><div><strong>+50%</strong><span>model accuracy vs. previous solution</span></div><div><strong>+20%</strong><span>mobile performance</span></div></div>
-            <div class="experience-tags" aria-label="Technologies used"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>C++</span><span>Android NNAPI</span><span>Linux</span></div>
+            <div class="experience-tags" aria-label="Technologies used"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>C++</span><span>LSTM</span><span>Android NNAPI</span><span>Linux</span></div>
           </div>
         </article>
         <article class="experience-card" data-reveal>
@@ -252,7 +252,7 @@
       <div class="section-heading"><p class="section-kicker">05 / PROBLEM SOLVING</p><h2>Competitive programming</h2><p class="section-intro">Writing fast algorithms and solving tricky problems under timed contest pressure.</p></div>
       <div class="programming-summary" aria-label="Competitive programming highlights"><div><strong>15+</strong><span>national contests</span></div><div><strong>3</strong><span>ICPC regional contests</span></div><div><strong>2,000+</strong><span>algorithmic problems solved across platforms</span></div></div>
       <div class="programming-profile-grid">
-        <article class="programming-card programming-card-spotlight">
+        <article class="programming-card programming-card-spotlight profile-codeforces">
           <div class="spotlight-heading"><img src="assets/img/programming/cf.jpg" alt="" loading="lazy"><div><span class="spotlight-kicker">FEATURED PROFILE</span><h3>Codeforces</h3></div><span class="spotlight-tier spotlight-tier-blue">Expert</span></div>
           <div class="spotlight-score spotlight-score-blue"><strong>1816</strong><span>Peak rating</span></div>
           <div class="spotlight-points"><span>Top 1% <small>global rating</small></span></div>
@@ -263,17 +263,17 @@
             <a href="https://codeforces.com/profile/ziac" target="_blank" rel="noopener">ziac <span aria-hidden="true">↗</span></a>
           </div>
         </article>
-        <article class="programming-card programming-card-spotlight">
+        <article class="programming-card programming-card-spotlight profile-codechef">
           <div class="spotlight-heading"><img src="assets/img/programming/cc.jpg" alt="" loading="lazy"><div><span class="spotlight-kicker">FEATURED PROFILE</span><h3>CodeChef</h3></div><span class="spotlight-tier spotlight-tier-yellow">5 Star</span></div>
           <div class="spotlight-score spotlight-score-yellow"><strong>2081</strong><span>Peak rating</span></div>
           <div class="spotlight-points"><span>Yellow <small>badge</small></span></div>
-          <a href="https://www.codechef.com/users/alshahreyaj" target="_blank" rel="noopener">View CodeChef profile <span aria-hidden="true">↗</span></a>
+          <div class="spotlight-links"><a href="https://www.codechef.com/users/alshahreyaj" target="_blank" rel="noopener">View CodeChef profile <span aria-hidden="true">↗</span></a></div>
         </article>
-        <article class="programming-card programming-card-spotlight">
+        <article class="programming-card programming-card-spotlight profile-toph">
           <div class="spotlight-heading"><img src="assets/img/programming/default.jpg" alt="" loading="lazy"><div><span class="spotlight-kicker">FEATURED PROFILE</span><h3>Toph</h3></div><span class="spotlight-tier spotlight-tier-dark-yellow">SS</span></div>
           <div class="spotlight-score spotlight-score-dark-yellow"><strong>1913</strong><span>Rating</span></div>
           <div class="spotlight-stats"><div><strong>#85</strong><small>Global rank</small></div><div><strong>15</strong><small>Problem sets</small></div><div><strong>122</strong><small>Solutions</small></div></div>
-          <a href="https://toph.co/u/Riaz_BSMRSTU" target="_blank" rel="noopener">View Toph profile <span aria-hidden="true">↗</span></a>
+          <div class="spotlight-links"><a href="https://toph.co/u/Riaz_BSMRSTU" target="_blank" rel="noopener">View Toph profile <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="programming-card"><img src="assets/img/programming/LeetCode_Sharing.png" alt="LeetCode logo" loading="lazy"><div><h3>LeetCode</h3><p class="profile-rank">120 <span>·</span> problems solved</p><p class="profile-note">Practice in algorithms and data structures.</p><a href="https://leetcode.com/u/alshahreyaj/" target="_blank" rel="noopener">View profile <span aria-hidden="true">↗</span></a></div></article>
         <article class="programming-card"><img src="assets/img/programming/lightoj-logo.svg" alt="LightOJ logo" loading="lazy"><div><h3>LightOJ</h3><p class="profile-rank">60 <span>·</span> problems solved</p><p class="profile-note">Online judge practice.</p><a href="https://lightoj.com/user/alshahreyaj" target="_blank" rel="noopener">View profile <span aria-hidden="true">↗</span></a></div></article>
@@ -294,7 +294,7 @@
       <div class="problem-setting-block">
         <div class="subsection-heading">
           <div><p class="section-kicker">PROBLEM SETTING &amp; AUTHORING</p><h3>Contest author &amp; judge</h3></div>
-          <a href="https://toph.co/u/Riaz_BSMRSTU/problems" target="_blank" rel="noopener" class="problem-setting-all-link">All authored problems <span>↗</span></a>
+          <a href="https://github.com/alshahreyaj/Problem-Setting" target="_blank" rel="noopener" class="problem-setting-all-link">All authored problems <span>↗</span></a>
         </div>
         <p class="problem-setting-intro">Served as a problem setter and judge for on-site &amp; community contests on Toph:</p>
         <div class="problem-setting-tags">
@@ -312,81 +312,104 @@
   <!-- ======= Selected Projects ======= -->
   <section id="portfolio" class="projects-section section-shell">
     <div class="container">
-      <div class="section-heading projects-heading"><div><p class="section-kicker">06 / SELECTED WORK</p><h2>Projects built<br>for real people.</h2></div><p class="section-intro">A selection of apps, AI utilities, and indie game projects I’ve built. Click on a project to see how it works under the hood.</p></div>
+      <div class="section-heading projects-heading"><div><p class="section-kicker">06 / SELECTED WORK</p><h2>Projects built<br>for real people.</h2></div><p class="section-intro">A selection of apps, AI utilities, and indie games. Open a project’s details for its features, implementation, and links.</p></div>
       <div class="project-filters" role="group" aria-label="Filter projects">
         <button type="button" class="project-filter is-active" data-filter="all" aria-pressed="true">All projects</button>
         <button type="button" class="project-filter" data-filter="software" aria-pressed="false">AI &amp; Software</button>
         <button type="button" class="project-filter" data-filter="game" aria-pressed="false">Games</button>
-        <button type="button" class="project-filter" data-filter="experiment" aria-pressed="false">Experiments</button>
       </div>
       <div class="project-grid">
         <article class="project-card project-card-featured" data-category="game" data-reveal>
           <img class="project-art" src="assets/img/project/boa.jpg" alt="Battle of Agents multiplayer shooter artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>MULTIPLAYER SHOOTER</span></div><h3>Battle of Agents</h3><p>A mobile 3D shooter with team-based real-time PvP, local multiplayer, zombie co-op, and bot practice.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Netcode for GameObjects</span><span>Blender</span></div>
-            <details class="project-case-study"><summary>Explore the case study</summary><div class="case-study-grid"><div><h4>My role</h4><p>Solo-developed the game, from planning through release.</p></div><div><h4>Implementation</h4><p>Built with Unity and C#, using Netcode for GameObjects for networked play. The project also uses Blender and Photoshop.</p></div><div><h4>Engineering focus</h4><p>Supporting multiple play modes and online multiplayer in a mobile game.</p></div><div><h4>Result</h4><p>Published on Google Play.</p></div></div></details>
-            <div class="project-actions"><a href="projects/battleofagents.html">Project page <span aria-hidden="true">↗</span></a><a href="https://play.google.com/store/apps/details?id=com.XenevaStudio.BattleOfAgents" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>MULTIPLAYER SHOOTER</span></div><h3>Battle of Agents</h3><p>Mobile 3D shooter with online PvP, local co-op, and zombie modes.</p>
+            <div class="project-badges"><span>2M+ downloads</span><span>15K+ ratings</span><span>Multiplayer</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>NGO</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Scope</h4><p>Game development from initial planning through publishing.</p></div><div><h4>Implementation</h4><p>Built with Unity and C#, using Netcode for GameObjects for networked play. Blender and Photoshop were used in production.</p></div><div><h4>Engineering focus</h4><p>Supporting online PvP and several local and cooperative modes in a mobile game.</p></div><div><h4>Release</h4><p>Published on Google Play, with more than 2 million downloads.</p></div></div></details>
+            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.XenevaStudio.BattleOfAgents" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">01</span>
         </article>
         <article class="project-card" data-category="software" data-reveal>
           <img class="project-art" src="assets/img/project/Dapple.png" alt="Dapple on-device AI tools artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>AI &amp; SOFTWARE</span><span>ANDROID</span></div><h3>Dapple</h3><p>An offline-first Android app built with Kotlin, Jetpack Compose, Material 3, and MVVM, running AI tools locally through LiteRT, ExecuTorch, and ONNX Runtime. On-demand model downloads let users install capabilities without bundling large model files.</p>
-            <div class="tag-list project-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>LiteRT</span><span>ExecuTorch</span><span>ONNX Runtime</span><span>OpenCV</span></div>
-            <details class="project-case-study"><summary>Explore the case study</summary><div class="case-study-grid"><div><h4>Objective</h4><p>Provide offline image, audio, video, and document processing without relying on cloud-based AI processing.</p><p><a href="https://play.google.com/store/apps/details?id=com.xenevastudio.dapple" target="_blank" rel="noopener">Google Play ↗</a></p></div><div><h4>Implementation</h4><p>Uses on-device inference with LiteRT (TensorFlow Lite), ExecuTorch, and ONNX Runtime. Models are downloaded on demand, so users can install individual capabilities without bundling large model files in the app.</p></div><div><h4>Engineering focus</h4><p>Mobile ML deployment, model optimization and quantization, hardware-accelerated inference, and multimedia processing, with OpenCV for image preprocessing and postprocessing.</p></div><div><h4>Implemented tools</h4><p>Background removal, AI photo enhancement, object removal, photo restoration, colorization, document scanning and OCR, speech-to-text, and audio noise reduction for audio and video. No planned tools are listed.</p></div></div></details>
+          <div class="project-copy"><div class="project-meta"><span>AI &amp; SOFTWARE</span><span>ANDROID</span></div><h3>Dapple</h3><p>Offline Android app with on-device AI tools for images, audio, video, and documents.</p>
+            <div class="project-badges"><span>On-device AI</span><span>Offline-first</span></div>
+            <div class="tag-list project-tags"><span>Kotlin</span><span>On-device ML</span><span>OpenCV</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Product goal</h4><p>Offer image, audio, video, and document tools that work on-device without sending user media to cloud AI services.</p></div><div><h4>Runtime architecture</h4><p>Integrates LiteRT, ExecuTorch, and ONNX Runtime. Models download on demand so users can add capabilities without bundling every large model in the app.</p></div><div><h4>Implemented capabilities</h4><p>Background removal, photo enhancement and restoration, object removal, colorization, document scanning and OCR, speech-to-text, and audio noise reduction for audio and video.</p></div><div><h4>Engineering focus</h4><p>On-device ML deployment, model optimization and quantization, hardware-accelerated inference, and OpenCV-based image preprocessing and postprocessing.</p></div></div></details>
+            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.xenevastudio.dapple" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
           </div>
           <span class="project-index" aria-hidden="true">02</span>
         </article>
-        <article class="project-card" data-category="game" data-reveal>
-          <img class="project-art" src="assets/img/project/tlc_cover.png" alt="The Last City survival game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>OFFLINE SURVIVAL RPG</span></div><h3>The Last City</h3><p>Explore a post-apocalyptic city, gather resources, craft upgrades, and fight to survive.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Singleton pattern</span><span>Observer pattern</span></div>
-            <details class="project-case-study"><summary>Explore the case study</summary><div class="case-study-grid"><div><h4>Overview</h4><p>An offline, open-world third-person survival RPG.</p></div><div><h4>Implementation</h4><p>Built in Unity with C#. The codebase uses Singleton and Observer patterns to organize inventory, crafting, and game state.</p></div><div><h4>Engineering focus</h4><p>Designing an interconnected resource-gathering and survival progression loop for mobile.</p></div><div><h4>Result</h4><p>Published on Google Play.</p></div></div></details>
-            <div class="project-actions"><a href="projects/tlc.html">Project page <span aria-hidden="true">↗</span></a><a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.TheLastCityHuntersOdyssey" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
+        <article class="project-card" data-category="software" data-reveal>
+          <img class="project-art" src="assets/img/project/tool-detector.png" alt="Cheating Tool Detector logo" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>SOFTWARE</span><span>WINDOWS &amp; LINUX</span></div><h3>Cheating Tool Detector</h3><p>Scans running processes for indicators of cheating software on Windows and Linux.</p>
+            <div class="project-badges"><span>Windows + Linux</span><span>Process monitoring</span></div>
+            <div class="tag-list project-tags"><span>Go</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>How it works</h4><p>Periodically scans running processes and flags matches against its indicators for a person to review. A match is an indicator, not proof of cheating.</p></div><div><h4>Implementation</h4><p>Implemented in Go, with process monitoring available on Windows and Linux.</p></div><div><h4>Focus</h4><p>Presenting findings as reviewable signals and supporting repeated monitoring with a user-selected scan interval.</p></div><div><h4>Source</h4><p>Implementation and technical details are available in the repository.</p><p><a href="https://github.com/alshahreyaj/cheating-tool-detector" target="_blank" rel="noopener">View repository ↗</a></p></div></div></details>
+            <div class="project-actions"><a href="https://github.com/alshahreyaj/cheating-tool-detector" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">03</span>
         </article>
         <article class="project-card" data-category="game" data-reveal>
-          <img class="project-art" src="assets/img/project/adventure-of-arlo-and-mini.png" alt="Adventure of Arlo and Mini co-op game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>CO-OP PLATFORM ADVENTURE</span></div><h3>Adventure of Arlo &amp; Mini</h3><p>A two-player 3D platform adventure where the characters combine different abilities to evade cats and find their way home.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Co-op gameplay</span><span>3D platforming</span></div>
-            <details class="project-case-study"><summary>Explore the case study</summary><div class="case-study-grid"><div><h4>Gameplay</h4><p>Designed for two players sharing one screen. Arlo controls gates while Mini’s speed helps distract enemies.</p></div><div><h4>Engineering focus</h4><p>Character abilities and level progression make cooperation central to each level.</p></div><div><h4>Implementation</h4><p>Built with Unity 3D and C#, focusing on tight platforming physics and puzzle level design.</p></div><div><h4>Link</h4><p><a href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener">Play on itch.io ↗</a></p></div></div></details>
-            <div class="project-actions"><a href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener">Play on itch.io <span aria-hidden="true">↗</span></a></div>
+          <img class="project-art" src="assets/img/project/tlc_cover.png" alt="The Last City survival game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>OFFLINE SURVIVAL RPG</span></div><h3>The Last City</h3><p>Survive a post-apocalyptic open world, gather resources, and craft upgrades.</p>
+            <div class="project-badges"><span>Offline</span><span>Survival RPG</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Open-world survival</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Core loop</h4><p>Explore an open world, gather resources, craft upgrades, and fight to survive.</p></div><div><h4>Implementation</h4><p>Built with Unity and C#. Singleton and Observer patterns organize inventory, crafting, and game state.</p></div><div><h4>Design focus</h4><p>Connect exploration, resource gathering, crafting, and combat into a mobile survival progression loop.</p></div><div><h4>Release</h4><p>Offline survival RPG published on Google Play.</p></div></div></details>
+            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.TheLastCityHuntersOdyssey" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">04</span>
         </article>
         <article class="project-card" data-category="game" data-reveal>
-          <img class="project-art" src="assets/img/project/boom-itch.png" alt="Boom physics puzzle game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>PHYSICS PUZZLE</span></div><h3>Boom!</h3><p>Arrange a rocket launcher, gravity ball, and bouncer wall to take out an angry robot in a single shot.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>2D physics</span></div>
-            <details class="project-case-study"><summary>Gameplay &amp; implementation</summary><div class="case-study-grid"><div><h4>Objective</h4><p>Find a one-shot solution by placing objects and using their physics interactions.</p></div><div><h4>Technology</h4><p>Unity · C# · Physics-based gameplay.</p></div></div></details>
-            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.Boom" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a><a href="https://alshahreyaj.itch.io/boom" target="_blank" rel="noopener">itch.io <span aria-hidden="true">↗</span></a></div>
+          <img class="project-art" src="assets/img/project/adventure-of-arlo-and-mini.png" alt="Adventure of Arlo and Mini co-op game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>CO-OP PLATFORM ADVENTURE</span></div><h3>Adventure of Arlo &amp; Mini</h3><p>Two-player 3D platform adventure with character-specific abilities.</p>
+            <div class="project-badges"><span>Brackeys Jam 2021.1</span><span>Local co-op</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Local co-op</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Game jam</h4><p>Submitted to Brackeys Game Jam 2021.1.</p><p><a href="https://itch.io/jam/brackeys-5/rate/927768" target="_blank" rel="noopener">View the jam entry ↗</a></p></div><div><h4>Co-op design</h4><p>Designed for two players sharing one screen. Arlo controls gates while Mini’s speed helps distract enemies, so players must coordinate their abilities.</p></div><div><h4>Implementation</h4><p>Built with Unity 3D and C#, with a focus on platforming physics and puzzle levels.</p></div><div><h4>Play</h4><p><a href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener">Play on itch.io ↗</a></p></div></div></details>
+            <div class="project-actions"><a href="https://alshahreyaj.itch.io/adventure-of-arlo-mini" target="_blank" rel="noopener">Play on itch.io <span aria-hidden="true">↗</span></a><a href="https://itch.io/jam/brackeys-5/rate/927768" target="_blank" rel="noopener">Brackeys jam page <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">05</span>
         </article>
         <article class="project-card" data-category="game" data-reveal>
-          <img class="project-art" src="assets/img/project/Island%20Courier.png" alt="Island Courier game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>DELIVERY SIMULATION</span></div><h3>Island Courier</h3><p>Build a delivery business across an island: take jobs, choose vehicles for each load, and upgrade your fleet.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Simulation</span></div>
-            <details class="project-case-study"><summary>Gameplay &amp; implementation</summary><div class="case-study-grid"><div><h4>Gameplay loop</h4><p>Delivery jobs, vehicle selection, and upgrades open up larger jobs and more of the island.</p></div><div><h4>Technology</h4><p>Unity · C#.</p></div></div></details>
-            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.xeneva.colormatching" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
+          <img class="project-art" src="assets/img/project/boom-itch.png" alt="Boom physics puzzle game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>PHYSICS PUZZLE</span></div><h3>Boom!</h3><p>Physics puzzle game built for BrainJam March 2021.</p>
+            <div class="project-badges"><span>3rd place</span><span>BrainJam 2021</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Physics puzzle</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Game jam result</h4><p>Placed 3rd in BrainJam March 2021.</p><p><a href="https://itch.io/jam/brainjammarch2021/rate/978370" target="_blank" rel="noopener">View the jam entry ↗</a></p></div><div><h4>Gameplay</h4><p>Arrange a rocket launcher, gravity ball, and bouncer wall to take out an angry robot in one shot.</p></div><div><h4>Technology</h4><p>Built with Unity and C#, using physics-driven puzzle mechanics.</p></div></div></details>
+            <div class="project-actions"><a href="https://itch.io/jam/brainjammarch2021/rate/978370" target="_blank" rel="noopener">BrainJam entry <span aria-hidden="true">↗</span></a><a href="https://play.google.com/store/apps/details?id=com.XenEvaStudio.Boom" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a><a href="https://alshahreyaj.itch.io/boom" target="_blank" rel="noopener">itch.io <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">06</span>
         </article>
-        <article class="project-card" data-category="experiment" data-reveal>
-          <img class="project-art" src="assets/img/project/nightmare.png" alt="Nightmares game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>EXPERIMENT</span><span>GAME JAM PUZZLE</span></div><h3>Nightmares</h3><p>A puzzle game made for Hack-A-Jam 2021. Help Emily navigate a surreal dream and escape the nightmare.</p>
-            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Game jam</span></div>
-            <details class="project-case-study"><summary>Project notes</summary><div class="case-study-grid"><div><h4>Objective</h4><p>Create a puzzle experience for Hack-A-Jam 2021.</p></div><div><h4>Technology</h4><p>Unity · C# · game-jam development.</p></div></div></details>
-            <div class="project-actions"><a href="https://itch.io/jam/iutcs-hack-a-jam-2021/rate/1334065" target="_blank" rel="noopener">View jam project <span aria-hidden="true">↗</span></a></div>
+        <article class="project-card" data-category="game" data-reveal>
+          <img class="project-art" src="assets/img/project/Island%20Courier.png" alt="Island Courier game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>DELIVERY SIMULATION</span></div><h3>Island Courier</h3><p>Run island deliveries, grow your business, and expand your vehicle fleet.</p>
+            <div class="project-badges"><span>Early access</span><span>Simulation</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span><span>Simulation</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Gameplay loop</h4><p>Delivery jobs, vehicle selection, and upgrades open up larger jobs and more of the island.</p></div><div><h4>Technology</h4><p>Unity · C#.</p></div></div></details>
+            <div class="project-actions"><a href="https://play.google.com/store/apps/details?id=com.xeneva.colormatching" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">07</span>
         </article>
         <article class="project-card" data-category="game" data-reveal>
-          <img class="project-art" src="assets/img/project/thedice.png" alt="Dice Masters browser game artwork" loading="lazy">
-          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>BROWSER · PLAY AGAINST AI</span></div><h3>Dice Masters</h3><p>A quick dice game where you challenge an AI opponent and race to reach 5,000 points first.</p>
-            <div class="tag-list project-tags"><span>Browser game</span><span>AI opponent</span></div>
-            <details class="project-case-study"><summary>Project notes</summary><div class="case-study-grid"><div><h4>Objective</h4><p>Reach 5,000 points before the AI opponent.</p></div><div><h4>Technology</h4><p>Browser-based game. Framework details are not listed in the project materials.</p></div></div></details>
-            <div class="project-actions"><a href="https://thedice.netlify.app/" target="_blank" rel="noopener">Play the demo <span aria-hidden="true">↗</span></a></div>
+          <img class="project-art" src="assets/img/project/nightmare.png" alt="Nightmares game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME JAM</span><span>PUZZLE GAME</span></div><h3>Nightmares</h3><p>Puzzle game about navigating a surreal dream and escaping a nightmare.</p>
+            <div class="project-badges"><span>Hack-A-Jam 2021</span><span>Puzzle</span></div>
+            <div class="tag-list project-tags"><span>Unity</span><span>C#</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Game jam</h4><p>Created for Hack-A-Jam 2021, a five-day game jam that required Unity 3D and used “Bad is Good” as its theme.</p><p><a href="https://itch.io/jam/iutcs-hack-a-jam-2021" target="_blank" rel="noopener">About the jam ↗</a></p></div><div><h4>Technology</h4><p>Unity · C#.</p></div></div></details>
+            <div class="project-actions"><a href="https://itch.io/jam/iutcs-hack-a-jam-2021/rate/1334065" target="_blank" rel="noopener">View jam project <span aria-hidden="true">↗</span></a></div>
           </div><span class="project-index" aria-hidden="true">08</span>
+        </article>
+        <article class="project-card" data-category="game" data-reveal>
+          <img class="project-art" src="assets/img/project/thedice.png" alt="Dice Masters browser game artwork" loading="lazy">
+          <div class="project-copy"><div class="project-meta"><span>GAME</span><span>BROWSER GAME</span></div><h3>Dice Masters</h3><p>Race an AI opponent to 5,000 points in this quick dice game.</p>
+            <div class="project-badges"><span>Play in browser</span><span>AI opponent</span></div>
+            <details class="project-case-study"><summary>View project details</summary><div class="case-study-grid"><div><h4>Objective</h4><p>Race the AI opponent to 5,000 points.</p></div><div><h4>Format</h4><p>Quick, browser-based dice game designed for short head-to-head rounds.</p></div></div></details>
+            <div class="project-actions"><a href="https://thedice.netlify.app/" target="_blank" rel="noopener">Play the demo <span aria-hidden="true">↗</span></a></div>
+          </div><span class="project-index" aria-hidden="true">09</span>
         </article>
       </div>
     </div>
   </section>
+
+  <dialog class="project-dialog" aria-labelledby="project-dialog-title">
+    <div class="project-dialog-panel">
+      <button class="project-dialog-close" type="button" aria-label="Close project details">×</button>
+      <div class="project-dialog-content"></div>
+    </div>
+  </dialog>
 
   <!-- ======= XenEva Studio ======= -->
   <section id="studio" class="studio-section">
@@ -397,7 +420,7 @@
           <p class="studio-kicker">CREATIVE HOBBY &amp; INDEPENDENT GAME PUBLISHING <span>·</span> 2019—PRESENT</p>
           <h3>From first build<br>to players’ hands.</h3>
           <p>XenEva Studio is my personal indie game label and creative hobby. In my spare time, I love taking game ideas from sketch to release—handling everything from gameplay programming and AI logic to store releases on Google Play and itch.io.</p>
-          <div class="studio-metrics" aria-label="Game development milestones"><div><strong>10+</strong><span>projects worked on</span></div><div><strong>2M+</strong><span>downloads for one published mobile game</span></div><div><strong>11K+</strong><span>positive ratings for that game</span></div></div>
+          <div class="studio-metrics" aria-label="Game development milestones"><div><strong>10+</strong><span>projects worked on</span></div><div><strong>2M+</strong><span>downloads for one published mobile game</span></div><div><strong>15K+</strong><span>positive ratings for that game</span></div></div>
           <div class="studio-actions">
             <a href="https://xenevastudio.github.io/" target="_blank" rel="noopener">Studio website <span>↗</span></a>
             <a href="https://alshahreyaj.itch.io/" target="_blank" rel="noopener">Browse games on itch.io <span>↗</span></a>
