@@ -360,6 +360,24 @@ body.modern-portfolio .project-dialog-actions { display:flex; flex-wrap:wrap; ga
 body.modern-portfolio .project-dialog-actions a { color:#edbd90; font-size:11px; font-weight:600 }
 body.modern-portfolio .project-dialog-actions a:hover { color:#ffe0bd }
 
+/* Open source contributions */
+body.modern-portfolio .opensource-section { padding:34px 0; background:#14171d }
+body.modern-portfolio .opensource-heading { display:flex; align-items:baseline; gap:14px; margin:0 0 12px }
+body.modern-portfolio .opensource-heading .section-kicker { flex:none; margin:0; color:var(--accent); font:9px var(--font-mono); letter-spacing:.1em }
+body.modern-portfolio .opensource-heading h2 { margin:0; color:var(--text); font:600 22px/1.2 var(--font-display); letter-spacing:-.03em }
+body.modern-portfolio .opensource-card { position:relative; display:grid; grid-template-columns:82px minmax(0,1fr) auto; align-items:center; gap:17px; padding:17px 19px; overflow:hidden; border:1px solid var(--line); border-radius:6px; background:radial-gradient(ellipse at 5% 50%,rgba(124,77,239,.12),transparent 38%),var(--surface); transition:border-color .2s,transform .2s,box-shadow .2s }
+body.modern-portfolio .opensource-card:hover { transform:translateY(-2px); border-color:rgba(150,112,255,.55); box-shadow:0 10px 28px rgba(0,0,0,.16) }
+body.modern-portfolio .opensource-logo { display:block; width:82px; height:55px; object-fit:cover; border:1px solid rgba(255,255,255,.12); border-radius:4px; box-shadow:0 4px 14px rgba(0,0,0,.2) }
+body.modern-portfolio .opensource-copy { min-width:0 }
+body.modern-portfolio .opensource-meta { margin:0 0 5px; color:#b59aff; font:8px var(--font-mono); letter-spacing:.08em }
+body.modern-portfolio .opensource-meta span { padding:0 5px; color:#777b84 }
+body.modern-portfolio .opensource-card h3 { margin:0 0 4px; color:var(--text); font:600 18px/1.2 var(--font-display) }
+body.modern-portfolio .opensource-copy>p:not(.opensource-meta) { margin:0; color:var(--muted); font-size:10px; line-height:1.5 }
+body.modern-portfolio .opensource-tags { display:flex; flex-wrap:wrap; gap:5px; margin-top:10px }
+body.modern-portfolio .opensource-tags span { padding:4px 7px; border:1px solid rgba(150,112,255,.26); border-radius:3px; background:rgba(124,77,239,.1); color:#d1c2ff; font:9px var(--font-mono) }
+body.modern-portfolio .opensource-card>a { display:inline-flex; align-items:center; gap:8px; flex:none; padding:10px 13px; border:1px solid #8056eb; border-radius:4px; background:#7044d6; color:#fff; font-size:10px; font-weight:600; white-space:nowrap; transition:background .18s,border-color .18s }
+body.modern-portfolio .opensource-card>a:hover { border-color:#9b7af4; background:#8056eb; color:#fff }
+
 /* Skills */
 body.modern-portfolio .skills-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:11px }
 body.modern-portfolio .skill-card { min-width:0; padding:17px; border:1px solid var(--line); border-radius:4px; background:var(--surface) }
@@ -591,6 +609,11 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .project-card-featured .project-copy { padding:12px }
   body.modern-portfolio .project-card-featured .project-copy h3 { font-size:20px }
   body.modern-portfolio .project-grid { grid-template-columns:1fr }
+  body.modern-portfolio .opensource-section { padding:30px 0 }
+  body.modern-portfolio .opensource-heading { align-items:flex-start; flex-direction:column; gap:5px }
+  body.modern-portfolio .opensource-card { grid-template-columns:58px minmax(0,1fr); gap:10px 12px; padding:13px }
+  body.modern-portfolio .opensource-logo { width:58px; height:42px }
+  body.modern-portfolio .opensource-card>a { grid-column:2 }
   body.modern-portfolio .project-dialog-panel { padding:48px 18px 18px }
   body.modern-portfolio .project-dialog-hero { grid-template-columns:1fr; gap:14px }
   body.modern-portfolio .project-dialog-hero>img { max-height:220px }
@@ -688,6 +711,12 @@ html.reveal-ready body.modern-portfolio [data-reveal].is-visible { opacity:1; tr
   body.modern-portfolio .certificate-list>a,
   body.modern-portfolio .contact-side { background:var(--surface); border-color:var(--line) }
   body.modern-portfolio .project-badges span { border-color:#d9c5ac; background:#f8f1e8; color:#75451f }
+  body.modern-portfolio .opensource-section { background:#efede7 }
+  body.modern-portfolio .opensource-card { background:var(--surface); border-color:var(--line); border-left-color:var(--accent) }
+  body.modern-portfolio .opensource-meta { color:#6843b5 }
+  body.modern-portfolio .opensource-copy>p:not(.opensource-meta) { color:#555a63 }
+  body.modern-portfolio .opensource-tags span { border-color:#d8cafa; background:#f3effc; color:#53378d }
+  body.modern-portfolio .opensource-card>a { border-color:#6843b5; background:#7044d6; color:#fff }
   body.modern-portfolio .project-dialog { border-color:#d3cec3; background:#fbfaf7; color:#292c32; box-shadow:0 24px 90px rgba(40,35,27,.28) }
   body.modern-portfolio .project-dialog-close { border-color:#d3cec3; background:#f1eee8; color:#292c32 }
   body.modern-portfolio .project-dialog-intro h2 { color:#292c32 }
